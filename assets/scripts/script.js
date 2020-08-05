@@ -14,8 +14,15 @@ function cardFlip(){
     hasFlippedCard = false;
     secondCard = this;
 
-    console.log(firstCard.dataset.number);
-    console.log(secondCard.dataset.number);
-}};
+    if (firstCard.dataset.number === secondCard.dataset.number) {
+        firstCard.removeEventListener('click', cardFlip);
+        secondCard.removeEventListener('click', cardFlip);
+    } else {
+        setTimeout(()=> {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }, 1500);
+}}}
+
 
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip)) 
