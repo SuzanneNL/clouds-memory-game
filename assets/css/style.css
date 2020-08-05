@@ -19,3 +19,28 @@ body {
     background-color: #5dbcd2;
     color: #fff;
 } 
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto; 
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: #c4c4c4;
+    margin-top: 10px; 
+}
+
+.memory-card {
+    width: 25%;
+    height: 25%;
+    position: relative;
+}
+
+.front, .back {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    ;
+} 
