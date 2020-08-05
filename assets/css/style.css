@@ -28,6 +28,7 @@ body {
     flex-wrap: wrap;
     background-color: #c4c4c4;
     margin-top: 10px; 
+    perspective: 1000px;
 }
 
 .memory-card {
@@ -35,6 +36,8 @@ body {
     height: 25%;
     position: relative;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .memory-card:active {
