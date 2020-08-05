@@ -8,18 +8,26 @@ body {
     height: 100vh;
     background: #fff;
 }
+/*-------------------------------HEADER-------------------------------*/
+header {
+    width: 640px;
+    margin: auto;
+}
 
 .page-title {
     text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
+    padding: 0;
 }
 
 .page-title h3 {
     background-color: #5dbcd2;
     color: #fff;
+    padding: 10px 0;
 } 
-
+/*-------------------------------END HEADER-------------------------------*/
+/*-------------------------------GAME-------------------------------*/
 .memory-game {
     width: 640px;
     height: 640px;
@@ -61,3 +69,6 @@ body {
 .front {
     transform: rotateY(180deg);
 } 
+/*-------------------------------END GAME-------------------------------*/
+/*-------------------------------FOOTER-------------------------------*/
+/*-------------------------------END FOOTER-------------------------------*/ 
