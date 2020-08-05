@@ -46,4 +46,11 @@ function resetBoard(){
     [firstCard, secondCard] = [null, null];
 }
 
+(function shuffle() {
+    allMemoryCards.forEach(card=>{
+        let randomPosition = Math.floor(Math.random()*14);
+        card.style.order = randomPosition;
+    });
+})();
+
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip)) 
