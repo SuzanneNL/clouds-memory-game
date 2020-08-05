@@ -2,11 +2,14 @@ const allMemoryCards = document.querySelectorAll('.memory-card');
 let firstCard, secondCard;
 let hasFlippedCard = false;
 let lockBoard = false;
+const flipSound = new Audio("assets/audio/card-flip.flac");
+const successSound = new Audio("assets/audio/success.wav");
 
 function cardFlip(){
     if (lockBoard) return;
     if (this===firstCard) return;
     this.classList.add('flip');
+    flipSound.play();
 
     if (!hasFlippedCard) {
     hasFlippedCard = true;
@@ -22,6 +25,7 @@ function cardFlip(){
 function matchCheck(){
     if (firstCard.dataset.number === secondCard.dataset.number) {
         freezeCards();
+        successSound.play();
     } else {
         cardsFlipBack();
 }}
