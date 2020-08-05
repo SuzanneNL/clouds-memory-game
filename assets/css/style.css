@@ -75,8 +75,37 @@ footer {
     background-color: #c4c4c4;
     color: #fff;
     text-align: center;
+    width: 100%;
     position: fixed;
     left: 0;
-    bottom: 0;
-    width: 100%;
+    bottom: 0;    
+    }
+
+footer > p {
+    margin: 5px 0;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links i {
+  font-size: 1.25rem;
+  padding: .5%;
+  color: #fff;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links li a i:hover {
+    text-decoration: none;
+    color:#5dbcd2;
+
+}
 /*-------------------------------END FOOTER-------------------------------*/ 
