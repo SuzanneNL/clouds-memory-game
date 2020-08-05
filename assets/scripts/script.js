@@ -1,10 +1,10 @@
 const allMemoryCards = document.querySelectorAll('.memory-card');
 let firstCard, secondCard;
 let hasFlippedCard = false;
-
-
+let lockBoard = false;
 
 function cardFlip(){
+    if (lockBoard) return;
     this.classList.add('flip');
 
     if (!hasFlippedCard) {
@@ -31,9 +31,11 @@ function freezeCards(){
 }
     
 function cardsFlipBack(){
+    lockBoard = true;
     setTimeout(()=> {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
+    lockBoard = false;
     }, 1500);}
 
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip)) 
