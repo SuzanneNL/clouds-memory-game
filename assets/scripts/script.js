@@ -5,6 +5,7 @@ let lockBoard = false;
 let flippedCards;
 const flipSound = new Audio("assets/audio/card-flip.flac");
 const successSound = new Audio("assets/audio/success.wav");
+const winSound = new Audio("assets/audio/win.wav");
 
 function cardFlip(){
     if (lockBoard) return;
@@ -62,7 +63,7 @@ function resetBoard(){
 
 function checkIfGameIsCompleted() {
     if (allMemoryCards.length == flippedCards.length) {
-    console.log("You win!")}};
+    winSound.play()}};
 
 
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip)) 
