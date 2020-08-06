@@ -2,6 +2,7 @@ const allMemoryCards = document.querySelectorAll('.memory-card');
 let firstCard, secondCard;
 let hasFlippedCard = false;
 let lockBoard = false;
+let flippedCards;
 const flipSound = new Audio("assets/audio/card-flip.flac");
 const successSound = new Audio("assets/audio/success.wav");
 
@@ -9,6 +10,7 @@ function cardFlip(){
     if (lockBoard) return;
     if (this===firstCard) return;
     this.classList.add('flip');
+    flippedCards = document.querySelectorAll('.flip')
     flipSound.play();
 
     if (!hasFlippedCard) {
@@ -26,6 +28,7 @@ function matchCheck(){
     if (firstCard.dataset.number === secondCard.dataset.number) {
         freezeCards();
         successSound.play();
+        checkIfGameIsCompleted()
     } else {
         cardsFlipBack();
 }}
@@ -56,5 +59,10 @@ function resetBoard(){
         card.style.order = randomPosition;
     });
 })();
+
+function checkIfGameIsCompleted() {
+    if (allMemoryCards.length == flippedCards.length) {
+    console.log("You win!")}};
+
 
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip)) 
