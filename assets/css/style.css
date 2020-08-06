@@ -28,9 +28,17 @@ header {
 } 
 /*-------------------------------END HEADER-------------------------------*/
 /*-------------------------------GAME INFO-------------------------------*/
-.clicks, .level {
+.counter, .level {
     text-align: center;
 }
+
+.level p, .counter p {
+    width: 100px;
+    border-radius: 10px;
+    background-color: #c4c4c4;
+    color: #fff;
+    }
+
 /*-------------------------------END GAME INFO-------------------------------*/
 /*-------------------------------GAME-------------------------------*/
 .memory-game {
