@@ -28,6 +28,15 @@ header {
 } 
 /*-------------------------------END HEADER-------------------------------*/
 /*-------------------------------GAME INFO-------------------------------*/
+.game {
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .counter, .level {
     text-align: center;
 }
