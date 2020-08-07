@@ -37,15 +37,21 @@ header {
     align-items: center;
 }
 
-.counter, .level {
+.counter, .level, .instructions {
     text-align: center;
 }
 
-.level p, .counter p {
+.instructions button {
+    border: none;
+    padding: 0;
+}
+
+.level p, .counter p, .instructions button {
     width: 100px;
     border-radius: 10px;
     background-color: #c4c4c4;
     color: #fff;
+    margin: 0;
     }
 
 /*-------------------------------END GAME INFO-------------------------------*/
