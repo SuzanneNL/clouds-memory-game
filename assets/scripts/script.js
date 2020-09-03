@@ -83,11 +83,14 @@ function resetBoard(){
 })();
 
 /*This function checks if the game is completed, by comparing the total number of memory cards with the number of flipped cards.
-When the game is completed, a win sound is played.*/
+When the game is completed, a win sound is played.
+Also, the class of visible is added to the win-modal, so a modal shows, saying "you win!"*/
 
 function checkIfGameIsCompleted() {
     if (allMemoryCards.length == flippedCards.length) {
-    winSound.play()}};
+    winSound.play();
+    document.querySelector('.win-modal').classList.add('visible');
+    }};
 
 /*This event listener checks if a card is flipped and then runs the functions cardFlip and countUp.*/
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip, countUp)) 
@@ -99,4 +102,4 @@ const toggleModal = () => {
 };
 
 document.querySelector('#show-modal').addEventListener('click', toggleModal);
-document.querySelector('#close-button').addEventListener('click', toggleModal);
+document.querySelector('.close-button').addEventListener('click', toggleModal);

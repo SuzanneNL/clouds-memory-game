@@ -26,10 +26,10 @@
         <!----------------------------------------END HEADER---------------------------------------->
         <!----------------------------------------GAME---------------------------------------->
         <section>
-            <div class="modal modal-hidden">
+            <div class="modal information-modal modal-hidden">
                 <div class="modal-content">
                     <div class="modal-close">
-                        <span id="close-button">X</span>
+                        <span class="close-button">X</span>
                     </div>
                     <h2><i class="fa fa-cloud" aria-hidden="true"></i> Instructions</h2>
                     <p>First decide how you want to play. You can either play with cloud images only (level 1), or cloud images and their corresponding names (level 2). 
@@ -114,7 +114,15 @@ Turn over any two cards. If the cards match, you 'keep' them. If they don't, the
                     <img class="back" src="assets/images/card-back.png" alt="back">   
                 </div>
             </div>
-  
+            <div class="modal win-modal">
+                <div class="modal-content">
+                    <div class="modal-close">
+                        <span class="close-button">X</span>
+                    </div>
+                    <h2><i class="fa fa-cloud" aria-hidden="true"></i> You win!</h2>
+                    <p>Nice job, you found all the matches in ... clicks.</p>
+                </div>
+            </div>
         </section>
         <!----------------------------------------END GAME---------------------------------------->
         <!----------------------------------------FOOTER---------------------------------------->

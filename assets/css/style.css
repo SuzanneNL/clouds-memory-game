@@ -56,7 +56,7 @@ header {
 
 /*-------------------------------END GAME INFO-------------------------------*/
 /*-------------------------------MODAL-------------------------------*/
-.modal {
+.information-modal {
     background-color: rgba(0,0,0,0.7);
     position: absolute;
     top: 0;
@@ -67,15 +67,35 @@ header {
     align-items: center;
 }
 
+.win-modal {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.visible {
+    display: flex;
+    z-index: 1000;
+}
+
 .modal-content {
     width: 600px;
     background-color: #fff;
     padding: 2rem 4rem;
 }
 
-.modal-content > h2 {
+.modal-content h2 {
     text-align: center;
     color: #5dbcd2;
+}
+
+.modal-content p {
+    text-align: center;
 }
 
 .modal-close {
