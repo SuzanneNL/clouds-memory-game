@@ -91,3 +91,12 @@ function checkIfGameIsCompleted() {
 
 /*This event listener checks if a card is flipped and then runs the functions cardFlip and countUp.*/
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip, countUp)) 
+
+/*This section toggles the class 'modal-hidden' to the div with a class of 'modal', to hide or show the modal.
+This occurst when (see the event listeners) the button Instructions or the close button in the modal are clicked.*/
+const toggleModal = () => {
+    document.querySelector('.modal').classList.toggle('modal-hidden');
+};
+
+document.querySelector('#show-modal').addEventListener('click', toggleModal);
+document.querySelector('#close-button').addEventListener('click', toggleModal);

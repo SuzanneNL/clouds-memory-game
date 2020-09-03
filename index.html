@@ -26,12 +26,23 @@
         <!----------------------------------------END HEADER---------------------------------------->
         <!----------------------------------------GAME---------------------------------------->
         <section>
+            <div class="modal modal-hidden">
+                <div class="modal-content">
+                    <div class="modal-close">
+                        <span id="close-button">X</span>
+                    </div>
+                    <h2><i class="fa fa-cloud" aria-hidden="true"></i> Instructions</h2>
+                    <p>First decide how you want to play. You can either play with cloud images only (level 1), or cloud images and their corresponding names (level 2). 
+Turn over any two cards. If the cards match, you 'keep' them. If they don't, they will be turned back over and you can try other cards. Remember what was on each card and where it was. The game is over when all the cards have been matched. Try to use as little clicks as possible and have fun!
+</p>
+                </div>
+            </div> 
             <div class="game">
                 <div class="level">
                     <p>Level: <span>2</span></p>
                 </div>
-                 <div class="instructions">
-                    <button>Instructions</button>
+                <div class="instructions">
+                    <button id="show-modal">Instructions</button>
                 </div>
                 <div class="counter">
                     <p>Clicks: <span>0</span></p>
@@ -103,6 +114,7 @@
                     <img class="back" src="assets/images/card-back.png" alt="back">   
                 </div>
             </div>
+  
         </section>
         <!----------------------------------------END GAME---------------------------------------->
         <!----------------------------------------FOOTER---------------------------------------->

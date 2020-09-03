@@ -55,6 +55,45 @@ header {
     }
 
 /*-------------------------------END GAME INFO-------------------------------*/
+/*-------------------------------MODAL-------------------------------*/
+.modal {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 600px;
+    background-color: #fff;
+    padding: 2rem 4rem;
+}
+
+.modal-content > h2 {
+    text-align: center;
+    color: #5dbcd2;
+}
+
+.modal-close {
+    display: flex;
+    justify-content: flex-end;
+    margin: -1rem -2rem 0 0;
+    }
+
+.modal-close span {
+    cursor: pointer;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+
+/*-------------------------------END MODAL-------------------------------*/
 /*-------------------------------GAME-------------------------------*/
 .memory-game {
     width: 640px;
