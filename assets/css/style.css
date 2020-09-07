@@ -37,7 +37,7 @@ header {
     align-items: center;
 }
 
-.counter, .level, .instructions {
+.counter, .dropdown, .instructions {
     text-align: center;
 }
 
@@ -46,12 +46,13 @@ header {
     padding: 0;
 }
 
-.level p, .counter p, .instructions button {
+.dropdown-toggle, .counter p, .instructions button {
     width: 100px;
     border-radius: 10px;
     background-color: #c4c4c4;
     color: #fff;
     margin: 0;
+    padding: 0;
     }
 
 /*-------------------------------END GAME INFO-------------------------------*/
