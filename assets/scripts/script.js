@@ -103,3 +103,11 @@ const toggleModal = () => {
 
 document.querySelector('#show-modal').addEventListener('click', toggleModal);
 document.querySelector('.close-button').addEventListener('click', toggleModal);
+
+/*When a user clicks on option 2, the second cloud image is replaced by a cloud name image*/
+function showNameCards() {
+document.querySelector('.cloud-name').classList.add('show-card');
+document.querySelector('.cloud-image').classList.add('hide-card');
+}
+
+document.querySelector('#option2').addEventListener("click", showNameCards);

@@ -157,6 +157,15 @@ header {
 .front {
     transform: rotateY(180deg);
 } 
+
+.hide-card {
+    display: none;
+}
+
+.show-card {
+    display: flex;
+}
+
 /*-------------------------------END GAME-------------------------------*/
 /*-------------------------------FOOTER-------------------------------*/
 footer {
