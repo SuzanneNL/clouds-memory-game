@@ -87,7 +87,7 @@ When the game is completed, a win sound is played.
 Also, the class of visible is added to the win-modal, so a modal shows, saying "you win!"*/
 
 function checkIfGameIsCompleted() {
-    if (allMemoryCards.length == flippedCards.length) {
+    if (flippedCards.length == 16) {
     winSound.play();
     document.querySelector('.win-modal').classList.add('visible');
     }};
