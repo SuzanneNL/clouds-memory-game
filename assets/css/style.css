@@ -37,16 +37,16 @@ header {
     align-items: center;
 }
 
-.counter, .dropdown, .instructions {
+.counter, .dropdown, .instructions, .reset {
     text-align: center;
 }
 
-.instructions button {
+.instructions button, #play-again {
     border: none;
     padding: 0;
 }
 
-.dropdown-toggle, .counter p, .instructions button {
+.dropdown-toggle, .counter p, .instructions button, #play-again {
     width: 100px;
     border-radius: 10px;
     background-color: #c4c4c4;
