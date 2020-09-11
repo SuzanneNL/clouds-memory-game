@@ -41,7 +41,8 @@ If there's no match, a function runs that makes the cards flip back.*/
 function matchCheck(){
     if (firstCard.dataset.number === secondCard.dataset.number) {
         freezeCards();
-        successSound.play();
+        if (flippedCards.length < 16) {
+        successSound.play()};
         checkIfGameIsCompleted()
     } else {
         cardsFlipBack();
