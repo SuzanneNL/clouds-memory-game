@@ -7,6 +7,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let flippedCards;
 let countNum = document.querySelector('.counter span');
+let finalCount = document.querySelector('#final-count')
 
 /*If the board is locked, or if the user clicks twice on the same card, this function is not executed.
 Clicked cards get the class of 'flip'. A sound is played when a card is clicked and flips, and the countUp function is run.
@@ -33,7 +34,8 @@ function cardFlip(){
 
 /*This function counts the number of clicks. Because of its position in cardFlip, doubleclicking a card doesn't count. Only flips count.*/
 function countUp(){
-	countNum.innerHTML++;}
+    countNum.innerHTML++;
+    finalCount.innerHTML++}
 
 /*This function checks if the first and second card match, by comparing the datasets. 
 If so, the cards are frozen, and a success sound plays. Also it runs a function to check if the game is completed.
