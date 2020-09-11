@@ -116,8 +116,22 @@ document.querySelector('#win-modal-close-button').addEventListener('click', clos
 
 /*When a user clicks on option 2, the second cloud image is replaced by a cloud name image*/
 function showNameCards() {
-document.querySelector('.cloud-name').classList.add('show-card');
-document.querySelector('.cloud-image').classList.add('hide-card');
+document.querySelector('.cloud-image1').classList.add('hide-card');
+document.querySelector('.cloud-name1').classList.add('show-card');
+document.querySelector('.cloud-image2').classList.add('hide-card');
+document.querySelector('.cloud-name2').classList.add('show-card');
+document.querySelector('.cloud-image3').classList.add('hide-card');
+document.querySelector('.cloud-name3').classList.add('show-card');
+document.querySelector('.cloud-image4').classList.add('hide-card');
+document.querySelector('.cloud-name4').classList.add('show-card');
+document.querySelector('.cloud-image5').classList.add('hide-card');
+document.querySelector('.cloud-name5').classList.add('show-card');
+document.querySelector('.cloud-image6').classList.add('hide-card');
+document.querySelector('.cloud-name6').classList.add('show-card');
+document.querySelector('.cloud-image7').classList.add('hide-card');
+document.querySelector('.cloud-name7').classList.add('show-card');
+document.querySelector('.cloud-image8').classList.add('hide-card');
+document.querySelector('.cloud-name8').classList.add('show-card');
 }
 
 document.querySelector('#option2').addEventListener("click", showNameCards);
