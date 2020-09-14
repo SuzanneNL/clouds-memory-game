@@ -258,4 +258,34 @@ footer > p {
         margin: 0;
     }
 }
+
+@media screen and (min-height: 1366px) and (min-width: 1024px) {
+    .memory-game {
+        width: 900px;
+        height: 900px;
+    }
+
+    header, .game {
+    width: 900px;
+    }
+    
+    .game {
+        padding: 10px 0 10px;
+    }
+    
+    h3 {
+    font-size: 3rem;
+    }
+    
+    .dropdown-toggle, .counter p, .instructions button, #play-again {
+    font-size: 2rem;  
+    width: 200px; 
+    border-radius: 30px;
+    }
+
+    footer p, .social-links i {
+    font-size: 2rem;
+    }
+}
+
 /*-------------------------------END MEDIA QUERIES-------------------------------*/
