@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Ranchers&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +9,7 @@
 body {
     height: 100vh;
     background: #fff;
+    font-family: 'Cabin', sans-serif;
 }
 /*-------------------------------HEADER-------------------------------*/
 header {
@@ -15,6 +18,7 @@ header {
 }
 
 .page-title {
+    font-family: 'Ranchers', cursive;
     text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
