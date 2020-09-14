@@ -27,7 +27,7 @@ header {
     padding: 10px 0;
 } 
 /*-------------------------------END HEADER-------------------------------*/
-/*-------------------------------GAME INFO-------------------------------*/
+/*-------------------------------BUTTONS AND COUNTER, ABOVE AND UNDER GAME-------------------------------*/
 .game {
     width: 640px;
     margin: auto;
@@ -70,7 +70,11 @@ header {
     background-color: #f1f1f1
 }
 
-/*-------------------------------END GAME INFO-------------------------------*/
+.reset {
+    padding-top: 10px;
+}
+
+/*-------------------------------END BUTTONS AND COUNTER, ABOVE AND UNDER GAM-------------------------------*/
 /*-------------------------------MODAL-------------------------------*/
 .information-modal {
     background-color: rgba(0,0,0,0.7);
