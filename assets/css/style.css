@@ -207,14 +207,55 @@ footer > p {
 }
 /*-------------------------------END FOOTER-------------------------------*/ 
 /*-------------------------------MEDIA QUERIES-------------------------------*/
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 360px) and (max-width: 660px) {
     .memory-game {
         width: 360px;
         height: 360px;
     }
 
-    header {
+    header, .game {
     width: 360px;
+    }
+
 }
+ @media screen and (min-width: 320px) and (max-width: 360px) {
+    .memory-game {
+        width: 320px;
+        height: 320px;
+    }
+
+    header, .game {
+    width: 320px;
+    }
+
+}
+
+ @media screen and (min-width: 280px) and (max-width: 320px) {
+    .memory-game {
+        width: 260px;
+        height: 260px;
+    }
+
+    header, .game {
+    width: 260px;
+    }
+
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .dropdown-toggle, .counter p, .instructions button, #play-again {
+    font-size: 0.7rem;
+    width: 70px;    
+    }
+
+    footer p, .social-links i {
+    font-size: 0.7rem;
+    }
+
+    ul.list-inline.social-links, footer p {
+        margin: 0;
+    }
 }
 /*-------------------------------END MEDIA QUERIES-------------------------------*/
