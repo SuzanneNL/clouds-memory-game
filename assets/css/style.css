@@ -55,12 +55,20 @@ header {
     padding: 0;
     border: none;
     outline:none;
-    }
+}
 
-    .instructions button:hover, #play-again:hover, .dropdown-toggle:hover {
+.instructions button:hover, #play-again:hover, .dropdown-toggle:hover {
     text-decoration: none;
     color:#5dbcd2;
-    }
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1
+}
 
 /*-------------------------------END GAME INFO-------------------------------*/
 /*-------------------------------MODAL-------------------------------*/
