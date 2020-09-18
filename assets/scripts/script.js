@@ -134,6 +134,7 @@ document.querySelector('.cloud-image7').classList.add('hide-card');
 document.querySelector('.cloud-name7').classList.add('show-card');
 document.querySelector('.cloud-image8').classList.add('hide-card');
 document.querySelector('.cloud-name8').classList.add('show-card');
+resetGame();
 }
 
 document.querySelector('#option2').addEventListener("click", showNameCards);
@@ -156,6 +157,7 @@ document.querySelector('.cloud-image7').classList.remove('hide-card');
 document.querySelector('.cloud-name7').classList.remove('show-card');
 document.querySelector('.cloud-image8').classList.remove('hide-card');
 document.querySelector('.cloud-name8').classList.remove('show-card');
+resetGame();
 }
 
 document.querySelector('#option1').addEventListener("click", showImageCards);
