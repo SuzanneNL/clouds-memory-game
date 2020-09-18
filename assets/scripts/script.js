@@ -188,7 +188,8 @@ document.querySelector('.cloud-name7').classList.remove('flip');
 document.querySelector('.cloud-name8').classList.remove('flip');
 allMemoryCards.forEach(card => card.addEventListener('click', cardFlip));
 resetBoard ();
-shuffle ();
+setTimeout(() => {
+shuffle ();}, 600);
 }
 
 document.querySelector('#play-again').addEventListener("click", resetGame);
