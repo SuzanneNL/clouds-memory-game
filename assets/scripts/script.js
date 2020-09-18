@@ -117,7 +117,13 @@ document.querySelector('#win-modal-close-button').addEventListener('click', clos
 
 
 /*When a user clicks on option 2, the second cloud images are replaced by cloud name cards*/
-function showNameCards() {
+function resetAndShowNameCards() {
+resetGame();
+setTimeout(() => {
+showNameCards ();}, 600);
+}
+
+function showNameCards () {
 document.querySelector('.cloud-image1').classList.add('hide-card');
 document.querySelector('.cloud-name1').classList.add('show-card');
 document.querySelector('.cloud-image2').classList.add('hide-card');
@@ -134,13 +140,18 @@ document.querySelector('.cloud-image7').classList.add('hide-card');
 document.querySelector('.cloud-name7').classList.add('show-card');
 document.querySelector('.cloud-image8').classList.add('hide-card');
 document.querySelector('.cloud-name8').classList.add('show-card');
-resetGame();
 }
 
-document.querySelector('#option2').addEventListener("click", showNameCards);
+document.querySelector('#option2').addEventListener("click", resetAndShowNameCards);
 
 /*When a user clicks on option 1, the cloud name cards are replaced by cloud images*/
-function showImageCards() {
+function resetAndShowImageCards() {
+resetGame();
+setTimeout(() => {
+showImageCards ();}, 600);
+}
+
+function showImageCards () {
 document.querySelector('.cloud-image1').classList.remove('hide-card');
 document.querySelector('.cloud-name1').classList.remove('show-card');
 document.querySelector('.cloud-image2').classList.remove('hide-card');
@@ -157,12 +168,11 @@ document.querySelector('.cloud-image7').classList.remove('hide-card');
 document.querySelector('.cloud-name7').classList.remove('show-card');
 document.querySelector('.cloud-image8').classList.remove('hide-card');
 document.querySelector('.cloud-name8').classList.remove('show-card');
-resetGame();
 }
 
-document.querySelector('#option1').addEventListener("click", showImageCards);
+document.querySelector('#option1').addEventListener("click", resetAndShowImageCards);
 
-/*Resetting the game!*/
+/*Resetting the game*/
 function resetGame () {
 document.querySelector('.first-cloud-image1').classList.remove('flip');
 document.querySelector('.first-cloud-image2').classList.remove('flip');
