@@ -159,3 +159,36 @@ document.querySelector('.cloud-name8').classList.remove('show-card');
 }
 
 document.querySelector('#option1').addEventListener("click", showImageCards);
+
+/*Resetting the game!*/
+function resetGame () {
+document.querySelector('.first-cloud-image1').classList.remove('flip');
+document.querySelector('.first-cloud-image2').classList.remove('flip');
+document.querySelector('.first-cloud-image3').classList.remove('flip');
+document.querySelector('.first-cloud-image4').classList.remove('flip');
+document.querySelector('.first-cloud-image5').classList.remove('flip');
+document.querySelector('.first-cloud-image6').classList.remove('flip');
+document.querySelector('.first-cloud-image7').classList.remove('flip');
+document.querySelector('.first-cloud-image8').classList.remove('flip');
+document.querySelector('.cloud-image1').classList.remove('flip');
+document.querySelector('.cloud-image2').classList.remove('flip');
+document.querySelector('.cloud-image3').classList.remove('flip');
+document.querySelector('.cloud-image4').classList.remove('flip');
+document.querySelector('.cloud-image5').classList.remove('flip');
+document.querySelector('.cloud-image6').classList.remove('flip');
+document.querySelector('.cloud-image7').classList.remove('flip');
+document.querySelector('.cloud-image8').classList.remove('flip');
+document.querySelector('.cloud-name1').classList.remove('flip');
+document.querySelector('.cloud-name2').classList.remove('flip');
+document.querySelector('.cloud-name3').classList.remove('flip');
+document.querySelector('.cloud-name4').classList.remove('flip');
+document.querySelector('.cloud-name5').classList.remove('flip');
+document.querySelector('.cloud-name6').classList.remove('flip');
+document.querySelector('.cloud-name7').classList.remove('flip');
+document.querySelector('.cloud-name8').classList.remove('flip');
+allMemoryCards.forEach(card => card.addEventListener('click', cardFlip));
+resetBoard ();
+shuffle ();
+}
+
+document.querySelector('#play-again').addEventListener("click", resetGame);
