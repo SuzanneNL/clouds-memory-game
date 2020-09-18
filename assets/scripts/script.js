@@ -9,6 +9,16 @@ let flippedCards;
 let countNum = document.querySelector('.counter span');
 let finalCount = document.querySelector('#final-count')
 
+/*This function shuffles the cards, making them switch positions. This function runs first."*/
+function shuffle() {
+    allMemoryCards.forEach(card=>{
+        let randomPosition = Math.floor(Math.random()*14);
+        card.style.order = randomPosition;
+    });
+};
+
+shuffle();
+
 /*If the board is locked, or if the user clicks twice on the same card, this function is not executed.
 Clicked cards get the class of 'flip'. A sound is played when a card is clicked and flips, and the countUp function is run.
 The condition concerning hasFlippedCard checks it the card that's clicked is the first or second card.
@@ -76,14 +86,6 @@ function resetBoard(){
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
-
-/*This function shuffles the cards, making them switch positions. This function runs first."*/
-(function shuffle() {
-    allMemoryCards.forEach(card=>{
-        let randomPosition = Math.floor(Math.random()*14);
-        card.style.order = randomPosition;
-    });
-})();
 
 /*This function checks if the game is completed, by comparing the total number of memory cards with the number of flipped cards.
 When the game is completed, a win sound is played.
