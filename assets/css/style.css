@@ -25,7 +25,7 @@ header {
 }
 
 .page-title h3 {
-    background-color: #5dbcd2;
+    background-color: #06C0E7;
     color: #fff;
     padding: 10px 0;
 } 
@@ -62,7 +62,7 @@ header {
 
 .instructions button:hover, #play-again:hover, .dropdown-toggle:hover {
     text-decoration: none;
-    color:#5dbcd2;
+    color:#06C0E7;
 }
 
 .dropdown-menu li {
@@ -114,7 +114,7 @@ header {
 
 .modal-content h2 {
     text-align: center;
-    color: #5dbcd2;
+    color: #06C0E7;
 }
 
 .modal-content p {
@@ -224,7 +224,7 @@ footer > p {
 
 .social-links li a i:hover {
     text-decoration: none;
-    color:#5dbcd2;
+    color:#06C0E7;
 
 }
 /*-------------------------------END FOOTER-------------------------------*/ 
