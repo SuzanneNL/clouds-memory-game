@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+</style>
 
 * {
     padding: 0;
@@ -158,6 +159,8 @@ header {
     transition: transform .5s;
 }
 
+
+
 .memory-card:active {
     transform: scale(0.97);
     transition: transform .4s;
@@ -239,6 +242,9 @@ footer > p {
     width: 360px;
     }
 
+    img.back {
+    padding: 3px;
+    }
 }
  @media screen and (min-width: 320px) and (max-width: 360px) {
     .memory-game {
@@ -250,12 +256,20 @@ footer > p {
     width: 320px;
     }
 
+    img.back {
+    padding: 3px;
+    }
+
 }
 
  @media screen and (min-width: 280px) and (max-width: 320px) {
     .memory-game {
         width: 260px;
         height: 260px;
+    }
+
+    img.back {
+    padding: 3px;
     }
 
     header, .game {
