@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-</style>
-
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +10,10 @@ body {
     background: #fff;
     font-family: 'Cabin', sans-serif;
 }
+
+
 /*-------------------------------HEADER-------------------------------*/
+
 header {
     width: 640px;
     margin: auto;
@@ -29,9 +30,14 @@ header {
     background-color: #06C0E7;
     color: #fff;
     padding: 10px 0;
-} 
+}
+
+
 /*-------------------------------END HEADER-------------------------------*/
+
+
 /*-------------------------------BUTTONS AND COUNTER, ABOVE AND UNDER GAME-------------------------------*/
+
 .game {
     width: 640px;
     margin: auto;
@@ -41,16 +47,23 @@ header {
     align-items: center;
 }
 
-.counter, .dropdown, .instructions, .reset {
+.counter,
+.dropdown,
+.instructions,
+.reset {
     text-align: center;
 }
 
-.instructions button, #play-again {
+.instructions button,
+#play-again {
     border: none;
     padding: 0;
 }
 
-.dropdown-toggle, .counter p, .instructions button, #play-again {
+.dropdown-toggle,
+.counter p,
+.instructions button,
+#play-again {
     width: 100px;
     border-radius: 10px;
     background-color: #c4c4c4;
@@ -58,12 +71,14 @@ header {
     margin: 0;
     padding: 0;
     border: none;
-    outline:none;
+    outline: none;
 }
 
-.instructions button:hover, #play-again:hover, .dropdown-toggle:hover {
+.instructions button:hover,
+#play-again:hover,
+.dropdown-toggle:hover {
     text-decoration: none;
-    color:#06C0E7;
+    color: #06C0E7;
 }
 
 .dropdown-menu li {
@@ -78,10 +93,14 @@ header {
     padding-top: 10px;
 }
 
+
 /*-------------------------------END BUTTONS AND COUNTER, ABOVE AND UNDER GAM-------------------------------*/
+
+
 /*-------------------------------MODAL-------------------------------*/
+
 .information-modal {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     height: 100%;
@@ -92,7 +111,7 @@ header {
 }
 
 .win-modal {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     height: 100%;
@@ -126,7 +145,7 @@ header {
     display: flex;
     justify-content: flex-end;
     margin: -1rem -2rem 0 0;
-    }
+}
 
 .modal-close span {
     cursor: pointer;
@@ -138,15 +157,18 @@ header {
 
 
 /*-------------------------------END MODAL-------------------------------*/
+
+
 /*-------------------------------GAME-------------------------------*/
+
 .memory-game {
     width: 640px;
     height: 640px;
-    margin: auto; 
-    display: flex; 
+    margin: auto;
+    display: flex;
     flex-wrap: wrap;
     background-color: #c4c4c4;
-    margin-top: 10px; 
+    margin-top: 10px;
     perspective: 1000px;
 }
 
@@ -159,29 +181,28 @@ header {
     transition: transform .5s;
 }
 
-
-
 .memory-card:active {
     transform: scale(0.97);
     transition: transform .4s;
 }
 
-.memory-card.flip{
+.memory-card.flip {
     transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
     height: 100%;
     width: 100%;
     padding: 5px;
     border-radius: 5px;
     position: absolute;
     backface-visibility: hidden;
-} 
+}
 
 .front {
     transform: rotateY(180deg);
-} 
+}
 
 .hide-card {
     display: none;
@@ -191,8 +212,12 @@ header {
     display: flex;
 }
 
+
 /*-------------------------------END GAME-------------------------------*/
+
+
 /*-------------------------------FOOTER-------------------------------*/
+
 footer {
     background-color: #c4c4c4;
     color: #fff;
@@ -200,25 +225,25 @@ footer {
     width: 100%;
     position: fixed;
     left: 0;
-    bottom: 0;    
-    }
+    bottom: 0;
+}
 
-footer > p {
+footer>p {
     margin: 5px 0;
 }
 
 .social-links {
-  text-align: center;
+    text-align: center;
 }
 
 .social-links li {
-  display: inline;
+    display: inline;
 }
 
 .social-links i {
-  font-size: 1.25rem;
-  padding: .5%;
-  color: #fff;
+    font-size: 1.25rem;
+    padding: .5%;
+    color: #fff;
 }
 
 .social-links a {
@@ -227,70 +252,71 @@ footer > p {
 
 .social-links li a i:hover {
     text-decoration: none;
-    color:#06C0E7;
-
+    color: #06C0E7;
 }
-/*-------------------------------END FOOTER-------------------------------*/ 
+
+
+/*-------------------------------END FOOTER-------------------------------*/
+
+
 /*-------------------------------MEDIA QUERIES-------------------------------*/
+
 @media screen and (min-width: 360px) and (max-width: 660px) {
     .memory-game {
         width: 360px;
         height: 360px;
     }
-
-    header, .game {
-    width: 360px;
+    header,
+    .game {
+        width: 360px;
     }
-
     img.back {
-    padding: 3px;
+        padding: 3px;
     }
 }
- @media screen and (min-width: 320px) and (max-width: 360px) {
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
     .memory-game {
         width: 320px;
         height: 320px;
     }
-
-    header, .game {
-    width: 320px;
+    header,
+    .game {
+        width: 320px;
     }
-
     img.back {
-    padding: 3px;
+        padding: 3px;
     }
-
 }
 
- @media screen and (min-width: 280px) and (max-width: 320px) {
+@media screen and (min-width: 280px) and (max-width: 320px) {
     .memory-game {
         width: 260px;
         height: 260px;
     }
-
     img.back {
-    padding: 3px;
+        padding: 3px;
     }
-
-    header, .game {
-    width: 260px;
+    header,
+    .game {
+        width: 260px;
     }
-
-
     h3 {
         font-size: 1.25rem;
     }
-
-    .dropdown-toggle, .counter p, .instructions button, #play-again {
-    font-size: 0.7rem;
-    width: 70px;    
+    .dropdown-toggle,
+    .counter p,
+    .instructions button,
+    #play-again {
+        font-size: 0.7rem;
+        width: 70px;
     }
-
-    footer p, .social-links i {
-    font-size: 0.7rem;
+    footer p,
+    .social-links i {
+        font-size: 0.7rem;
     }
-
-    ul.list-inline.social-links, footer p {
+    ul.list-inline.social-links,
+    footer p {
         margin: 0;
     }
 }
@@ -300,28 +326,29 @@ footer > p {
         width: 900px;
         height: 900px;
     }
-
-    header, .game {
-    width: 900px;
+    header,
+    .game {
+        width: 900px;
     }
-    
     .game {
         padding: 10px 0 10px;
     }
-    
     h3 {
-    font-size: 3rem;
+        font-size: 3rem;
     }
-    
-    .dropdown-toggle, .counter p, .instructions button, #play-again {
-    font-size: 2rem;  
-    width: 200px; 
-    border-radius: 30px;
+    .dropdown-toggle,
+    .counter p,
+    .instructions button,
+    #play-again {
+        font-size: 2rem;
+        width: 200px;
+        border-radius: 30px;
     }
-
-    footer p, .social-links i {
-    font-size: 2rem;
+    footer p,
+    .social-links i {
+        font-size: 2rem;
     }
 }
+
 
 /*-------------------------------END MEDIA QUERIES-------------------------------*/
