@@ -2,6 +2,7 @@ const allMemoryCards = document.querySelectorAll('.memory-card');
 const flipSound = new Audio("assets/audio/card-flip.flac");
 const successSound = new Audio("assets/audio/success.wav");
 const winSound = new Audio("assets/audio/win.wav");
+const shuffleSound = new Audio("assets/audio/shuffle.wav");
 let firstCard, secondCard;
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -159,6 +160,7 @@ function showImageCards() {
 document.querySelector('#option1').addEventListener("click", resetAndShowImageCards);
 /*Resetting the game*/
 function resetGame() {
+    shuffleSound.play();
 	document.querySelector('.first-cloud-image1').classList.remove('flip');
 	document.querySelector('.first-cloud-image2').classList.remove('flip');
 	document.querySelector('.first-cloud-image3').classList.remove('flip');
