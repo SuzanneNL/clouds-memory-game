@@ -82,10 +82,18 @@ header {
 
 .dropdown-menu li {
     cursor: pointer;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f1f1f1;
+}
+
+ul.dropdown-menu.show {
+    padding: 0;
 }
 
 .dropdown-menu li:hover {
-    background-color: #f1f1f1
+    background-color: #c4c4c4;
 }
 
 .reset {
