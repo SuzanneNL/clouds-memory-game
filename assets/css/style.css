@@ -78,6 +78,7 @@ header {
 .dropdown-toggle:hover {
     text-decoration: none;
     background-color: #04829c; 
+    color: #fff;
 }
 
 .dropdown-menu li {
@@ -94,6 +95,7 @@ ul.dropdown-menu.show {
 
 .dropdown-menu li:hover {
     background-color: #c4c4c4;
+    color: #fff;
 }
 
 .reset {
@@ -133,7 +135,7 @@ ul.dropdown-menu.show {
 
 .modal-content {
     width: 600px;
-    background-color: #fff;
+    background-color: #fafafa;
     padding: 2rem 4rem;
 }
 
