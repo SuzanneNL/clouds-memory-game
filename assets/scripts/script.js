@@ -185,7 +185,8 @@ function resetGame() {
 	document.querySelector('.cloud-name6').classList.remove('flip');
 	document.querySelector('.cloud-name7').classList.remove('flip');
 	document.querySelector('.cloud-name8').classList.remove('flip');
-	document.querySelector('.counter span').innerHTML = 0;
+    document.querySelector('.counter span').innerHTML = 0;
+    document.querySelector('#final-count').innerHTML = 0;
 	allMemoryCards.forEach(card => card.addEventListener('click', cardFlip));
 	resetBoard();
 	setTimeout(() => {
