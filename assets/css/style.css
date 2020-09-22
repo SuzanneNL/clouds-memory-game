@@ -61,8 +61,10 @@ header {
 .counter p,
 .instructions button,
 #play-again {
-    width: 100px;
-    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
     background-color: #c4c4c4;
     color: #fff;
     margin: 0;
@@ -250,6 +252,17 @@ footer>p {
 
 /*-------------------------------MEDIA QUERIES-------------------------------*/
 
+@media screen and (max-width: 660px) {
+    .dropdown-toggle,
+    .counter p,
+    .instructions button,
+    #play-again {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    }
+}
 @media screen and (min-width: 360px) and (max-width: 660px) {
     .memory-game {
         width: 360px;
