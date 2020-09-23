@@ -6,7 +6,9 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: #fafafa;
     font-family: 'Cabin', sans-serif;
 }
@@ -99,7 +101,7 @@ ul.dropdown-menu.show {
 }
 
 .reset {
-    padding-top: 10px;
+    padding: 10px 0 20px;
 }
 
 /*-------------------------------END BUTTONS AND COUNTER, ABOVE AND UNDER GAM-------------------------------*/
@@ -226,7 +228,7 @@ footer {
     color: #fff;
     text-align: center;
     width: 100%;
-    position: fixed;
+    margin-top: auto;
     left: 0;
     bottom: 0;
 }
