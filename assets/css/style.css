@@ -275,7 +275,7 @@ footer>p {
     border-radius: 20px;
     }
 }
-@media screen and (min-width: 360px) and (max-width: 660px) {
+@media screen and (min-width: 390px) and (max-width: 660px) {
     .memory-game {
         width: 360px;
         height: 360px;
@@ -289,7 +289,7 @@ footer>p {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 390px) {
     .memory-game {
         width: 320px;
         height: 320px;
@@ -305,15 +305,15 @@ footer>p {
 
 @media screen and (min-width: 280px) and (max-width: 320px) {
     .memory-game {
-        width: 260px;
-        height: 260px;
+        width: 250px;
+        height: 250px;
     }
     img.back, img.front {
         padding: 3px;
     }
     header,
     .game {
-        width: 260px;
+        width: 250px;
     }
     h3 {
         font-size: 1.25rem;
