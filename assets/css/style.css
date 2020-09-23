@@ -146,10 +146,6 @@ ul.dropdown-menu.show {
     color: #06C0E7;
 }
 
-.modal-content p {
-    text-align: center;
-}
-
 .modal-close {
     display: flex;
     justify-content: flex-end;
