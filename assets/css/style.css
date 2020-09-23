@@ -356,6 +356,8 @@ footer>p {
     #play-again {
         font-size: 2rem;
         width: 200px;
+        height: 60px;
+        line-height: 60px;
         border-radius: 30px;
     }
     footer p,
