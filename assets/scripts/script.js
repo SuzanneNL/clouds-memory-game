@@ -128,8 +128,11 @@ function showNameCards() {
 	document.querySelector('.cloud-image7').classList.add('hide-card');
 	document.querySelector('.cloud-name7').classList.add('show-card');
 	document.querySelector('.cloud-image8').classList.add('hide-card');
-	document.querySelector('.cloud-name8').classList.add('show-card');
+    document.querySelector('.cloud-name8').classList.add('show-card');
+    document.querySelector('.option1').classList.add('hide-check');
+    document.querySelector('.option2').classList.remove('hide-check');
 }
+
 document.querySelector('#option2').addEventListener("click", resetAndShowNameCards);
 /*When a user clicks on option 1, the cloud name cards are replaced by cloud images*/
 function resetAndShowImageCards() {
@@ -155,8 +158,11 @@ function showImageCards() {
 	document.querySelector('.cloud-image7').classList.remove('hide-card');
 	document.querySelector('.cloud-name7').classList.remove('show-card');
 	document.querySelector('.cloud-image8').classList.remove('hide-card');
-	document.querySelector('.cloud-name8').classList.remove('show-card');
+    document.querySelector('.cloud-name8').classList.remove('show-card');
+     document.querySelector('.option1').classList.remove('hide-check');
+    document.querySelector('.option2').classList.add('hide-check');
 }
+
 document.querySelector('#option1').addEventListener("click", resetAndShowImageCards);
 /*Resetting the game*/
 function resetGame() {
