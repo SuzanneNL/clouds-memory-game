@@ -100,7 +100,7 @@ ul.dropdown-menu.show {
     color: #fff;
 }
 
-i.fa.fa-check.option1, i.fa.fa-check.option2 {
+i.fa.fa-check.option1, i.fa.fa-check.option2, i.fa.fa-times {
     color: #04829c;
 }
 
@@ -151,7 +151,11 @@ i.fa.fa-check.option1, i.fa.fa-check.option2 {
 
 .modal-content h2 {
     text-align: center;
-    color: #06C0E7;
+    color: #04829c;
+}
+
+.modal-content p {
+    text-align: center;
 }
 
 .modal-close {
