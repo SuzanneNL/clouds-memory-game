@@ -12,7 +12,7 @@ let finalCount = document.querySelector('#final-count');
 /*This function shuffles the cards, making them switch positions. This function runs first."*/
 function shuffle() {
 	allMemoryCards.forEach(card => {
-		let randomPosition = Math.floor(Math.random() * 14);
+		let randomPosition = Math.floor(Math.random() * 16);
 		card.style.order = randomPosition;
 	});
 }
