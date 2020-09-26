@@ -113,21 +113,21 @@ function resetAndShowNameCards() {
 }
 
 function showNameCards() {
-	document.querySelector('.cloud-image1').classList.add('hide-card');
+	document.querySelector('.second-cloud-image1').classList.add('hide-card');
 	document.querySelector('.cloud-name1').classList.add('show-card');
-	document.querySelector('.cloud-image2').classList.add('hide-card');
+	document.querySelector('.second-cloud-image2').classList.add('hide-card');
 	document.querySelector('.cloud-name2').classList.add('show-card');
-	document.querySelector('.cloud-image3').classList.add('hide-card');
+	document.querySelector('.second-cloud-image3').classList.add('hide-card');
 	document.querySelector('.cloud-name3').classList.add('show-card');
-	document.querySelector('.cloud-image4').classList.add('hide-card');
+	document.querySelector('.second-cloud-image4').classList.add('hide-card');
 	document.querySelector('.cloud-name4').classList.add('show-card');
-	document.querySelector('.cloud-image5').classList.add('hide-card');
+	document.querySelector('.second-cloud-image5').classList.add('hide-card');
 	document.querySelector('.cloud-name5').classList.add('show-card');
-	document.querySelector('.cloud-image6').classList.add('hide-card');
+	document.querySelector('.second-cloud-image6').classList.add('hide-card');
 	document.querySelector('.cloud-name6').classList.add('show-card');
-	document.querySelector('.cloud-image7').classList.add('hide-card');
+	document.querySelector('.second-cloud-image7').classList.add('hide-card');
 	document.querySelector('.cloud-name7').classList.add('show-card');
-	document.querySelector('.cloud-image8').classList.add('hide-card');
+	document.querySelector('.second-cloud-image8').classList.add('hide-card');
     document.querySelector('.cloud-name8').classList.add('show-card');
     document.querySelector('.option1').classList.add('hide-check');
     document.querySelector('.option2').classList.remove('hide-check');
@@ -143,23 +143,23 @@ function resetAndShowImageCards() {
 }
 
 function showImageCards() {
-	document.querySelector('.cloud-image1').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image1').classList.remove('hide-card');
 	document.querySelector('.cloud-name1').classList.remove('show-card');
-	document.querySelector('.cloud-image2').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image2').classList.remove('hide-card');
 	document.querySelector('.cloud-name2').classList.remove('show-card');
-	document.querySelector('.cloud-image3').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image3').classList.remove('hide-card');
 	document.querySelector('.cloud-name3').classList.remove('show-card');
-	document.querySelector('.cloud-image4').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image4').classList.remove('hide-card');
 	document.querySelector('.cloud-name4').classList.remove('show-card');
-	document.querySelector('.cloud-image5').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image5').classList.remove('hide-card');
 	document.querySelector('.cloud-name5').classList.remove('show-card');
-	document.querySelector('.cloud-image6').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image6').classList.remove('hide-card');
 	document.querySelector('.cloud-name6').classList.remove('show-card');
-	document.querySelector('.cloud-image7').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image7').classList.remove('hide-card');
 	document.querySelector('.cloud-name7').classList.remove('show-card');
-	document.querySelector('.cloud-image8').classList.remove('hide-card');
+	document.querySelector('.second-cloud-image8').classList.remove('hide-card');
     document.querySelector('.cloud-name8').classList.remove('show-card');
-     document.querySelector('.option1').classList.remove('hide-check');
+    document.querySelector('.option1').classList.remove('hide-check');
     document.querySelector('.option2').classList.add('hide-check');
 }
 
