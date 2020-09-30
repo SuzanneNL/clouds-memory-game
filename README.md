@@ -1,7 +1,7 @@
 # CLOUD MEMORY GAME
 ## Milestone project no.2
 ### Interactive Frontend Development Milestone Project
-#### [Direct link to live website](https://suzannenl.github.io/clouds-memory-game/)
+#### Click [here](https://suzannenl.github.io/clouds-memory-game/) for a link to the live website.
 This website was created for educational purposes only.
 ![Responsive views of website](documentation/responsive.png)
 
@@ -28,7 +28,7 @@ This website can be viewed on pc monitors, laptops, tablets and mobile devices. 
 - [**Credits**](#Credits)
     - [Content](#Content)
     - [Media](#Media)
-    - {Tutorials](#Tutorials)
+    - [Tutorials](#Tutorials)
     - [Acknowledgements](#Acknowledgements)
 
 ## UX
@@ -84,8 +84,10 @@ I used the following font-families:
 - 'Raleway' for the name cards. 
 
 ### Mock-ups
-Mock-ups for this website were created using Figma:
+Mock-ups for this website were created using Figma.
+-Desktop version:
 ![Figma - desktop version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-desktop.png)
+-Mobile devices version:
 ![Figma - mobile version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-mobile.png)
 
 
@@ -113,44 +115,44 @@ Mock-ups for this website were created using Figma:
 - Dark mode. Someone pointed out that there's a lot of white on my page, which could be uncomfortable for users who want to play the game for a long time (for example, when there are a lot more different levels). I would choose a darker back-ground and darker colors and memory cards. The images would remain the same, though. 
 
 ## TECHNOLOGIES USED
-[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-HTML was used for the structure of the website.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+was used for the structure of the website.
 
-[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-CSS was used to add style to the website.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+was used to add style to the website.
 
-[Javascript] (https://developer.mozilla.org/en-US/docs/Web/Javascript)
-JavaScript was used as an application controller.
+- [Javascript] (https://developer.mozilla.org/en-US/docs/Web/Javascript)
+was used as an application controller.
 
-[Bootstrap 4](https://getbootstrap.com/)
-Bootstrap was used for making the website responsive and fit for mobile use.
+- [Bootstrap 4](https://getbootstrap.com/)
+was used for making the website responsive and fit for mobile use.
 
-[Google Chrome](https://www.google.com/chrome/)
-Chrome was used for the Chrome DevTools and as a browser.
+- [Google Chrome](https://www.google.com/chrome/)
+was used for the Chrome DevTools and as a browser.
 
-[Google Fonts](https://fonts.google.com/)
-Google Fonts was used to select font-family Cabin. 
+- [Google Fonts](https://fonts.google.com/)
+was used to select font-families Raleway and Cabin. 
 
-[Git](https://git-scm.com/)
-Git was used for Version Control.
+- [Git](https://git-scm.com/)
+was used for Version Control.
 
-[GitHub](https://github.com/)
-The repository is hosted on Github. 
+- [GitHub](https://github.com/)
+is where the repository is hosted.
 
-[GitHub Pages](https://suzannenl.github.io/clouds-memory-game/)
-The live website is hosted on GitHub Pages.
+- [GitHub Pages](https://suzannenl.github.io/clouds-memory-game/)
+is where the live website is hosted.
 
-[Font awesome](https://fontawesome.com/)
-Font awesome was used for the cloud icon in the modals and the back of the cards.
+- [Font awesome](https://fontawesome.com/)
+was used for the different icons.
 
-[Figma](https://www.figma.com/)
-Figma was used to create wireframes. 
+- [Figma](https://www.figma.com/)
+was used to create wireframes. 
 
-[Am I Responsive](http://ami.responsivedesign.is/)
-Am I Responsive was used to test the responsiveness of the website.
+- [Am I Responsive](http://ami.responsivedesign.is/)
+was used to test the responsiveness of the website.
 
-[Autoprefixer CSS online](https://autoprefixer.github.io/)
-Autoprefixer was used to prefix my CSS.
+- [Autoprefixer CSS online](https://autoprefixer.github.io/)
+was used to prefix my CSS.
 
 ## TESTING
 The testing process can be found in this separate document [here](
@@ -203,7 +205,7 @@ Sounds:
     - https://github.com/AJGreaves/picflip/blob/master/testing.md
 
 ### Acknowledgements
-I was inspired by the website of the [Cloud Appreciation Society](https://cloudappreciationsociety.org/)
+I was inspired by the website of the [Cloud Appreciation Society](https://cloudappreciationsociety.org/).
 
 I received advice and encouragement from:
 - Thomas;
