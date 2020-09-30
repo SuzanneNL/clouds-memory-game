@@ -1,22 +1,21 @@
 # TESTING 
-
 ## Table of contents
 
--[**Automated testing**](#Automated-testing)
-    -[Validating](#Validating)
-    -[Jasmine}(#Jasmine)
--[**Testing user stories**](#Testing-user-stories)
--[**Manual testing**](#Manual-testing)
-    [Options](#Options)
-    [Instructions](#Instructions)
-    [Click counter](#Click-counter)
-    [Play again!](#Play-again!)
-    [Memory cards](#Memory-cards)
-    [Footer](#Footer)
--[**Resolved issues**](#Resolved-issues)
--[**Unresolved issues**](#Unresolved-issues)
--[**Browsers**](#Browsers)
--[**Responsiveness**](#Responsiveness)
+- [**Automated testing**](#Automated-testing)
+    - [Validating](#Validating)
+    - [Jasmine](#Jasmine)
+- [**Testing user stories**](#Testing-user-stories)
+- [**Manual testing**](#Manual-testing)
+    - [Options](#Options)
+    - [Instructions](#Instructions)
+    - [Click counter](#Click-counter)
+    - [Play again!](#Play-again!)
+    - [Memory cards](#Memory-cards)
+    - [Footer](#Footer)
+- [**Resolved issues**](#Resolved-issues)
+- [**Unresolved issues**](#Unresolved-issues)
+- [**Browsers**](#Browsers)
+- [**Responsiveness**](#Responsiveness)
 
 To return to the README file, click [here]( https://github.com/SuzanneNL/clouds-memory-game/blob/master/README.md).
 
