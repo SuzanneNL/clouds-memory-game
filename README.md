@@ -7,7 +7,7 @@ This website was created for educational purposes only.
 
 ## INTRODUCTION
 As a memory game, this game can be played by people who want to test their memory, but it is specifically aimed at cloud enthusiasts. A user can test his memory by matching two identical images of clouds. Or he can test his knowledge of cloud names by matching a cloud image to a card with its corresponding cloud name.
-This website can be viewed on pc monitors, laptops, tablets and mobile devices. It is hosted on GitHub Pages and can be viewed here (https://suzannenl.github.io/clouds-memory-game/).
+This website can be viewed on pc monitors, laptops, tablets and mobile devices. It is hosted on GitHub Pages and can be viewed [here](https://suzannenl.github.io/clouds-memory-game/).
 
 ## Table of contents
 - [**UX**](#UX)
@@ -35,10 +35,10 @@ This website can be viewed on pc monitors, laptops, tablets and mobile devices. 
 ### Goal/Strategy
 The goal of this website is to entertain users (mainly cloud enthusiasts) with a fun memory card game and to allow them to test their knowledge of cloud names. 
 
-#### Scope
+### Scope
 An easy to navigate and responsive website that is entertaining and allows a user to test his memory and knowledge of clouds. 
 
-#### Structure
+### Structure
 The website consists of a single page. It presents a memory card game. Between the header and the game, there are three items:
 - Options, allowing a user to choose whether he wants to play with card images only or with cloud images and cloud names. The default setting is option 1 (cloud images).
 - Instructions, a button which when clicked on, presents a modal with instructions on how to play the game.
@@ -85,12 +85,12 @@ I used the following font-families:
 
 ### Mock-ups
 Mock-ups for this website were created using Figma:
--[Figma - desktop version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-desktop.png)
--[Figma - mobile version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-mobile.png)
+![Figma - desktop version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-desktop.png)
+![Figma - mobile version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-mobile.png)
 
 
 ## FEATURES
-### Existing Features
+### Existing features
 - This website presents a game that is ready to be played.
 - This website offers a user instructions on how to play the game.
 - This game offers the opportunity to test one's knowledge of cloud names by selecting the second option.
@@ -106,7 +106,7 @@ Mock-ups for this website were created using Figma:
 - This website was built in GidPod and hosted by GitHub pages. 
 - Documentation.
 
-### Features Left to Implement
+### Features left to implement
 - The game could be expanded by adding more clouds and different levels with clouds that are easier and harder to identify/name. There are in fact 89 variations of clouds! 
 - Background music or sounds (like the sound of the wind) could be added. I chose not to, because I didn't want to distract the users from the game. However, I could add an on/off button so that a user can decide for himself if he wants to listen to the sound of the wind whilst playing the game. 
 - Memory games of other students include a timer. A timer could be added, but I chose not to because I want this game to be relaxing (because looking at clouds is relaxing). I do however see how this could be a feature that would make a player more competitive. 
@@ -196,11 +196,11 @@ Sounds:
 - [Shuffle sound](https://freesound.org/people/deathpie/sounds/19245/)
 
 ### Tutorials and sources 
-Tutorials:
-- https://www.youtube.com/watch?v=ZniVgo8U7ek
-- https://www.youtube.com/watch?v=KX0NR5HtQ1Q
-Testing file:
-https://github.com/AJGreaves/picflip/blob/master/testing.md
+- Tutorials:
+    - https://www.youtube.com/watch?v=ZniVgo8U7ek
+    - https://www.youtube.com/watch?v=KX0NR5HtQ1Q
+- Testing file:
+    - https://github.com/AJGreaves/picflip/blob/master/testing.md
 
 ### Acknowledgements
 I was inspired by the website of the [Cloud Appreciation Society](https://cloudappreciationsociety.org/)
