@@ -121,7 +121,7 @@ was used for the structure of the website.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 was used to add style to the website.
 
-- [Javascript] (https://developer.mozilla.org/en-US/docs/Web/Javascript)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/Javascript)
 was used as an application controller.
 
 - [Bootstrap 4](https://getbootstrap.com/)
