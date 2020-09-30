@@ -341,6 +341,15 @@ footer>p {
     footer p {
         margin: 0;
     }
+    .modal-content h2 {
+    font-size: 1rem;    
+    }
+    .modal-content li {
+    font-size: 0.8rem;
+    }
+    .modal-content p {
+    font-size: 0.8rem;
+    }
 }
 
 @media screen and (min-height: 1366px) and (min-width: 1024px) {
