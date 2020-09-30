@@ -2,13 +2,19 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: #fafafa;
     font-family: 'Cabin', sans-serif;
 }
@@ -40,10 +46,17 @@ header {
 .game {
     width: 640px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .counter,
@@ -122,9 +135,15 @@ i.fa.fa-check.option1, i.fa.fa-check.option2, i.fa.fa-times {
     top: 0;
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .win-modal {
@@ -134,11 +153,17 @@ i.fa.fa-check.option1, i.fa.fa-check.option2, i.fa.fa-times {
     height: 100%;
     width: 100%;
     display: none;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 1000;
 }
@@ -159,8 +184,12 @@ i.fa.fa-check.option1, i.fa.fa-check.option2, i.fa.fa-times {
 }
 
 .modal-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin: -1rem -2rem 0 0;
 }
 
@@ -180,29 +209,47 @@ i.fa.fa-check.option1, i.fa.fa-check.option2, i.fa.fa-times {
     width: 640px;
     height: 640px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: #c4c4c4;
     margin-top: 10px;
-    perspective: 1000px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
 }
 
 .memory-card {
     width: 25%;
     height: 25%;
     position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
     transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
 }
 
 .memory-card:active {
-    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+        -ms-transform: scale(0.97);
+            transform: scale(0.97);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
     transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
 }
 
 .memory-card.flip {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .front,
@@ -212,11 +259,13 @@ i.fa.fa-check.option1, i.fa.fa-check.option2, i.fa.fa-times {
     padding: 5px;
     border-radius: 5px;
     position: absolute;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .front {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .hide-card {
@@ -224,6 +273,8 @@ i.fa.fa-check.option1, i.fa.fa-check.option2, i.fa.fa-times {
 }
 
 .show-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
