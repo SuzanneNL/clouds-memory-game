@@ -181,21 +181,21 @@ The text for all the sections of the website were written by me.
 ### Media
 All the images used in this game were obtained from the Instagram account [@whatsthiscloud](https://www.instagram.com/whatsthiscloud/)
 - Cirrocumulus - original photo by user @cloud_bashing_pilot
-![Cirrocumulus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/01.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/01.jpg" alt="Cirrocumulus" width="250" height="250" >
 - Cumulonimbus - original photo by user @mizeyes
-![Cumulonimbus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/02.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/02.jpg" alt="Cumulonimbus" width="250" height="250" >
 - Fallstreak hole - original photo by user @eagle.ed
-![Fallstreak hole](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/03.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/03.jpg" alt="Fallstreak hole" width="250" height="250" >
 - Horseshoe vortex - original photo by @whatsthiscloud
-![Horseshoe vortex](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/04.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/04.jpg" alt="Horseshoe vortex" width="250" height="250" >
 - Lacunosus - original photo by user @itspoultrynmotion
-![Lacunosus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/05.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/05.jpg" alt="Lacunosus" width="250" height="250" >
 - Lenticularis - original photo by user @pilot_lindy
-![Lenticularis](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/06.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/06.jpg" alt="Lenticularis" width="250" height="250" >
 - Mammatus - original photo by user @fotometeokevins
-![Mammatus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/07.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/07.jpg" alt="Mammatus" width="250" height="250" >
 - Noctilucent - original photo by user @fluffles2016
-![Noctilucent](https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/08.jpg)
+<img src="https://github.com/SuzanneNL/clouds-memory-game/blob/master/assets/images/08.jpg" alt="Noctilucent" width="250" height="250" >
 
 Sounds:
 - [Flip sound](https://freesound.org/people/qubodup/sounds/60013/)
