@@ -31,31 +31,44 @@ I wanted to test my code with Jasmine, but unfortunately the course material and
 ## Testing user stories
 **As the creator of this website...**
 1. **I want my website and game to be simple but attractive so that a user is enticed to play the game.**
-- The design of this website has been kept simple, with three main colors that compliment each other. The cloud images are beautiful.  
+  - The design of this website has been kept simple, with three main colors that compliment each other. The cloud images are beautiful.  
 2. **I want my website to have a clear and simple structure, so that it is easy to navigate.**
-- There website consists of a single page. This page has a header and footer, and a game that has three buttons and a click counter. Hover effects make it easy for the user to navigate.
+  - There website consists of a single page. This page has a header and footer, and a game that has three buttons and a click counter. 
+  - Hover effects make it easy for the user to navigate.
 3. **I want my website to entertain the user with a fun memory game, that he will want to play several times - for example to try again to improve the number of clicks needed.**
-- Visual effects and sound effects make the game entertaining. During the game, the click counter keeps track of the number of clicks a user needs to complete the game. At the end, the user is told how many clicks he needed. He can then try to beat his score.
+  - Visual effects and sound effects make the game entertaining. 
+  - During the game, the click counter keeps track of the number of clicks a user needs to complete the game. 
+  - At the end, the user is informed of how many clicks he needed. He can then try to beat his score.
 4.  **I want my website to 'reward' a user with sound effects and a modal at the end of the game.**
-- The flip sound, match sound, win sound and shuffle sound reward the user for his actions. A modal pops up after completing the game, informing the user of the number of clicks he needed.
+  - The flip sound, match sound, win sound and shuffle sound reward the user for his actions. 
+  - A modal pops up after completing the game, informing the user of the number of clicks he needed.
 
 **As a user....**
 1. **I enjoy looking at pretty pictures of clouds.**
-- I chose eight pictures of beautiful clouds. Even though the size of the images goes down as the user uses a smaller device, they are still portrayed correctly and visible. But for the best experience, I advice using a tablet or larger device, instead of a mobile phone.  
+  - I chose eight pictures of beautiful clouds. Even though the size of the images goes down as the user uses a smaller device, they are still portrayed correctly and visible. But for the best experience, I advice using a tablet or larger device, instead of a mobile phone.  
 2. **I want to entertain myself by playing a game.**
-- The game is visually appealing and works correctly. Cards flip when clicked on and are 'kept' when there's a match. The user receives feedback in the form of visual effects, sound effects, a click counter and a win modal. 
+  - The game is visually appealing and works correctly. 
+  - Cards flip when clicked on and are 'kept' when there's a match. 
+  - The user receives feedback in the form of visual effects, sound effects, a click counter and a win modal. 
 3. **I want to test my memory and/or knowledge of cloud names.**
-- The game works as a memory game should, and a user can select the option to play with name cards. 
+  - The game works as a memory game should, and a user can select the option to play with name cards. 
 4. **I want to know if the matches I make between cloud images (or images and cloud names) are correct.**
-- When a match is made, the cards do not flip back, but are 'kept'. Also, a success sound plays. When the final match is made, the win sound plays and a win modal pops up.  
+  - When a match is made, the cards do not flip back, but are 'kept'. Also, a success sound plays. 
+  - When the final match is made, the win sound plays and a win modal pops up.  
 5. **I want to be rewarded for my actions or receive feedback while playing this game.** 
-- When a memory card is flipped, when a match is made, when the game is completed, and when the game is reset, a suiting sound effect plays. The click counter and win modal give feedback to the user on how many clicks are needed to play the game. When a card is clicked, it is 'pressed down' (is becomes just a tad smaller). A check mark appears in front of the option that is selected (images only or images and names). Hover effects show if elements can be clicked on (f.e. one can click on options, but cannot click on 'clicks'). 
+  - When a memory card is flipped, when a match is made, when the game is completed, and when the game is reset, a suiting sound effect plays. 
+  - The click counter and win modal give feedback to the user on how many clicks are needed to play the game. 
+  - When a card is clicked, it is 'pressed down' (it becomes just a tad smaller). 
+  - A check mark appears in front of the option that is selected (images only or images and names). 
+  - Hover effects show if elements can be clicked on (f.e. one can click on options, but cannot click on 'clicks'). 
 6. **I want a game that doesn't get stuck or break.**
-- A user cannot flip more than two cards at the time, because the board locks for a short moment. Clicking fast will maybe cancel the second flip sound (because the first flip sound isn't over when the second card is clicked), but the functionality of the game still works. The game can be reset at any time.  
+  - A user cannot flip more than two cards at the time, because the board locks for a short moment. 
+  - Clicking fast will maybe cancel the second flip sound (because the first flip sound isn't over when the second card is clicked), but the functionality of the game still works. 
+  - The game can be reset at any time.  
 7. **I want to be able to improve myself by keeping track of the number of clicks needed to finish the game.**
-- At the end, a user can see how many clicks he needed to complete the game. A user can then try again. The counter is reset, and the user can play again. He can then compare his score to how he did earlier.
+  - At the end, a user can see how many clicks he needed to complete the game. A user can then try again. The counter is reset, and the user can play again. He can then compare his score to how he did earlier.
 8. **I want to be able to contact the creator of the game through social media.**
-- The links in the footer direct to the social media pages. 
+  - The links in the footer direct to the social media pages. 
 
 ## Manual testing
 Manual testing was done on different devices (see Responsiveness).
@@ -94,13 +107,13 @@ turns into a pointer and the color of an item and the text changes.
 
 ## Resolved issues
 1. **Clicking a third card.**
-- A user could click on a third card before a match was checked between the first and second card. The solution to this was to lock the board and use the setTimeout function to allow cards to be flipped back. This was explained in the youtube tutorial I used (see Credits in the README file).
+  - A user could click on a third card before a match was checked between the first and second card. The solution to this was to lock the board and use the setTimeout function to allow cards to be flipped back. This was explained in the youtube tutorial I used (see Credits in the README file).
 
 2. **Double-clicking a card.**
-- A user could click on a card twice, which gave a match (in the data attribute). The card would remain flipped, because the event listener was removed. This was fixed by adding a condition that checks if, when clicked, 'this' was the first card. This was explained in the youtube tutorial.
+  - A user could click on a card twice, which gave a match (in the data attribute). The card would remain flipped, because the event listener was removed. This was fixed by adding a condition that checks if, when clicked, 'this' was the first card. This was explained in the youtube tutorial.
 
 3. **Click counter going up by two.**
-- To count the number of clicks, I wrote the following code:
+  - To count the number of clicks, I wrote the following code:
 ```javascript
 let countNum = document.querySelector('.countNum span');
 cards.forEach(card => card.addEventListener('click', countUp));
@@ -115,7 +128,7 @@ cards.forEach(card => card.addEventListener('click', flipCard, countUp));
 That fixed it.
 
 4. **Switching between options.**
-- There are two options for playing the game. I wanted option one to show all cloud images. And I wanted to show cloud images and name images as option two. First I tried to create an event listener for clicking on option two in the dropdown menu that I created:
+  - There are two options for playing the game. I wanted option one to show all cloud images. And I wanted to show cloud images and name images as option two. First I tried to create an event listener for clicking on option two in the dropdown menu that I created:
 ```javascript
 function test () {
 console.log ("test")}
@@ -134,7 +147,7 @@ document.querySelector('#option2').addEventListener("click", 	showNameCards);
 This worked for the first cloud card. I then tried to change querySelector into querySelectorAll, but unfortunately '.add' cannot be combined with querySelectorAll. According to tutor support, it seems like querySelectorAll adds everything together it grabs into a nodeList. I therefore had to write out the querySelector for each card. 
 
 5. **Unable to complete the game.** 
-- I had been playing and testing the game with 16 images cards, but had now uploaded 8 name cards. This broke my checkIfGameIsCompleted function. This was because of the condition checking the number of flipped cards (16 at the end) with the number of all the cards:
+  - I had been playing and testing the game with 16 images cards, but had now uploaded 8 name cards. This broke my checkIfGameIsCompleted function. This was because of the condition checking the number of flipped cards (16 at the end) with the number of all the cards:
 ```javascript	
 (allMemoryCards.length == flippedCards.length)
 ```
@@ -143,19 +156,19 @@ And because I had added the name cards, I now had 24 cards. I fixed this by just
 (flippedCards.length == 16)
 ```
 6. **The success and win sounds played at the same time at the end of the game.** 
-- I wanted only the win sound to play, so I omitted the success sound for the 8th match by adding a condition:
+  - I wanted only the win sound to play, so I omitted the success sound for the 8th match by adding a condition:
 ```javascript
 if (flippedCards.length < 16) {
 successSound.play()};
 ```
 7. **Shuffling before flipping back.** 
-- When I reset the game or switched levels, the cards would shuffle before they were flipped back, so that a user could see where the cards were going. This was fixed with the setTimeout function, allowing the cards to flip back before they were shuffled.
+  - When I reset the game or switched levels, the cards would shuffle before they were flipped back, so that a user could see where the cards were going. This was fixed with the setTimeout function, allowing the cards to flip back before they were shuffled.
 
 8. **Resetting the click counter for the win modal.**
-- The click counter was reset when the game was reset. But I had forgotten to reset the click counter in the win modal. This made the number of clicks go up and up after each game. This was easily fixed by resetting the click counter in the win modal like I had in the click counter itself.
+  - The click counter was reset when the game was reset. But I had forgotten to reset the click counter in the win modal. This made the number of clicks go up and up after each game. This was easily fixed by resetting the click counter in the win modal like I had in the click counter itself.
 
 9. **Footer going over the game.**
-- The footer would go over the game, so I made it stick to the bottom of the page with the following CSS (that I had also used in my MS1):
+  - The footer would go over the game, so I made it stick to the bottom of the page with the following CSS (that I had also used in my MS1):
 ```css
 body {
     min-height: 100vh;
@@ -169,14 +182,16 @@ footer {
 This made the footer stick to the bottom but also made white space appear next to and under the page on stretched devices with a width of 320px and under. I already had media queries in place, but adjusting them and making the width of the game and header smaller for these devices fixed this bug.
 
 10. **The game didn't work in Safari.**
-- In Safari, the cards didn't flip, but glitched. This broke the game completely. I fixed this by prefixing the CSS using [Autoprefixer CSS online](https://autoprefixer.github.io/). 
+  - In Safari, the cards didn't flip, but glitched. This broke the game completely. I fixed this by prefixing the CSS using [Autoprefixer CSS online](https://autoprefixer.github.io/). 
 
 11. **Changing class names.**
-- I had changed the classes of the images memory cards for consistency, but I had actually changed the class of one of the name-cards. This resulted in breaking the game: when I reset the game, the cards that had been flipped were flipped back, but could then no longer be clicked. Also when resetting the game, not all cards were flipped back. This was fixed by changing back the name of the class of the name-card.
+  - I had changed the classes of the images memory cards for consistency, but I had actually changed the class of one of the name-cards. This resulted in breaking the game: when I reset the game, the cards that had been flipped were flipped back, but could then no longer be clicked. Also when resetting the game, not all cards were flipped back. This was fixed by changing back the name of the class of the name-card.
 
 ## Unresolved issues
-- Ideally, when the page opens, the entire game and all of its buttons are visual on the screen, without having to scroll down. This has been the case on most mobile devices and monitors that I have tested. The page actually fits best on tablets. Unfortunately, on some of the laptops that have tested the game, the 'play again!' button doesn't fit: a user needs to scroll down a bit to see it. A different lay-out (with all the buttons on the side) could be considered for wide screens.  
-- When clicking two cards quickly, the second flip sound doesn't play. This is because the first sound (0.43 sec) hasn't finished playing yet.   
+1. **Scrolling down for the 'play again!' button.**
+  - Ideally, when the page opens, the entire game and all of its buttons are visual on the screen, without having to scroll down. This has been the case on most mobile devices and monitors that I have tested. The page actually fits best on tablets. Unfortunately, on some of the laptops that have tested the game, the 'play again!' button doesn't fit: a user needs to scroll down a bit to see it. A different lay-out (with all the buttons on the side) could be considered for wide screens.  
+2. **The second flip sound doesn't play.**
+  - When clicking two cards quickly, the second flip sound doesn't play. This is because the first sound (0.43 sec) hasn't finished playing yet.   
 
 ## Browsers
 The final version of the website was tested in different browsers. The website and game now work correctly in Chrome, Opera, Mozilla, Safari and Microsoft Edge, provided that they have been updated to support ES6. 
