@@ -30,32 +30,32 @@ I wanted to test my code with Jasmine, but unfortunately the course material and
 
 ## Testing user stories
 **As the creator of this website...**
-- **I want my website and game to be simple but attractive so that a user is enticed to play the game.**
-The design of this website has been kept simple, with three main colors that compliment each other. The cloud images are beautiful.  
-- **I want my website to have a clear and simple structure, so that it is easy to navigate.**
-There website consists of a single page. This page has a header and footer, and a game that has three buttons and a click counter. Hover effects make it easy for the user to navigate.
-- **I want my website to entertain the user with a fun memory game, that he will want to play several times - for example to try again to improve the number of clicks needed.**
-Visual effects and sound effects make the game entertaining. During the game, the click counter keeps track of the number of clicks a user needs to complete the game. At the end, the user is told how many clicks he needed. He can then try to beat his score.
-- **I want my website to 'reward' a user with sound effects and a modal at the end of the game.**
-The flip sound, match sound, win sound and shuffle sound reward the user for his actions. A modal pops up after completing the game, informing the user of the number of clicks he needed.
+1. **I want my website and game to be simple but attractive so that a user is enticed to play the game.**
+- The design of this website has been kept simple, with three main colors that compliment each other. The cloud images are beautiful.  
+2. **I want my website to have a clear and simple structure, so that it is easy to navigate.**
+- There website consists of a single page. This page has a header and footer, and a game that has three buttons and a click counter. Hover effects make it easy for the user to navigate.
+3. **I want my website to entertain the user with a fun memory game, that he will want to play several times - for example to try again to improve the number of clicks needed.**
+- Visual effects and sound effects make the game entertaining. During the game, the click counter keeps track of the number of clicks a user needs to complete the game. At the end, the user is told how many clicks he needed. He can then try to beat his score.
+4.  **I want my website to 'reward' a user with sound effects and a modal at the end of the game.**
+- The flip sound, match sound, win sound and shuffle sound reward the user for his actions. A modal pops up after completing the game, informing the user of the number of clicks he needed.
 
 **As a user....**
-- **I enjoy looking at pretty pictures of clouds.**
-I chose eight pictures of beautiful clouds. Even though the size of the images goes down as the user uses a smaller device, they are still portrayed correctly and visible. But for the best experience, I advice using a tablet or larger device, instead of a mobile phone.  
-- **I want to entertain myself by playing a game.**
-The game is visually appealing and works correctly. Cards flip when clicked on and are 'kept' when there's a match. The user receives feedback in the form of visual effects, sound effects, a click counter and a win modal. 
-- **I want to test my memory and/or knowledge of cloud names.**
-The game works as a memory game should, and a user can select the option to play with name cards. 
-- **I want to know if the matches I make between cloud images (or images and cloud names) are correct.**
-When a match is made, the cards do not flip back, but are 'kept'. Also, a success sound plays. When the final match is made, the win sound plays and a win modal pops up.  
-- **I want to be rewarded for my actions or receive feedback while playing this game.** 
-When a memory card is flipped, when a match is made, when the game is completed, and when the game is reset, a suiting sound effect plays. The click counter and win modal give feedback to the user on how many clicks are needed to play the game. When a card is clicked, it is 'pressed down' (is becomes just a tad smaller). A check mark appears in front of the option that is selected (images only or images and names). Hover effects show if elements can be clicked on (f.e. one can click on options, but cannot click on 'clicks'). 
-- **I want a game that doesn't get stuck or break.**
-A user cannot flip more than two cards at the time, because the board locks for a short moment. Clicking fast will maybe cancel the second flip sound (because the first flip sound isn't over when the second card is clicked), but the functionality of the game still works. The game can be reset at any time.  
-- **I want to be able to improve myself by keeping track of the number of clicks needed to finish the game.**
-At the end, a user can see how many clicks he needed to complete the game. A user can then try again. The counter is reset, and the user can play again. He can then compare his score to how he did earlier.
-- **I want to be able to contact the creator of the game through social media.**
-The links in the footer direct to the social media pages. 
+1. **I enjoy looking at pretty pictures of clouds.**
+- I chose eight pictures of beautiful clouds. Even though the size of the images goes down as the user uses a smaller device, they are still portrayed correctly and visible. But for the best experience, I advice using a tablet or larger device, instead of a mobile phone.  
+2. **I want to entertain myself by playing a game.**
+- The game is visually appealing and works correctly. Cards flip when clicked on and are 'kept' when there's a match. The user receives feedback in the form of visual effects, sound effects, a click counter and a win modal. 
+3. **I want to test my memory and/or knowledge of cloud names.**
+- The game works as a memory game should, and a user can select the option to play with name cards. 
+4. **I want to know if the matches I make between cloud images (or images and cloud names) are correct.**
+- When a match is made, the cards do not flip back, but are 'kept'. Also, a success sound plays. When the final match is made, the win sound plays and a win modal pops up.  
+5. **I want to be rewarded for my actions or receive feedback while playing this game.** 
+- When a memory card is flipped, when a match is made, when the game is completed, and when the game is reset, a suiting sound effect plays. The click counter and win modal give feedback to the user on how many clicks are needed to play the game. When a card is clicked, it is 'pressed down' (is becomes just a tad smaller). A check mark appears in front of the option that is selected (images only or images and names). Hover effects show if elements can be clicked on (f.e. one can click on options, but cannot click on 'clicks'). 
+6. **I want a game that doesn't get stuck or break.**
+- A user cannot flip more than two cards at the time, because the board locks for a short moment. Clicking fast will maybe cancel the second flip sound (because the first flip sound isn't over when the second card is clicked), but the functionality of the game still works. The game can be reset at any time.  
+7. **I want to be able to improve myself by keeping track of the number of clicks needed to finish the game.**
+- At the end, a user can see how many clicks he needed to complete the game. A user can then try again. The counter is reset, and the user can play again. He can then compare his score to how he did earlier.
+8. **I want to be able to contact the creator of the game through social media.**
+- The links in the footer direct to the social media pages. 
 
 ## Manual testing
 Manual testing was done on different devices (see Responsiveness).
@@ -68,7 +68,6 @@ turns into a pointer and the color of an item and the text changes.
 - The user can switch between the options by clicking on them. A check mark appears in front of the selected option.
 - When a user clicks on 'play again', it plays in the option that was last selected. The game doesn't go back to the default setting of option one, like when first opening the page.
 - When a user selects another option (f.e. goes from 'Images only' to 'Images and names', the game is reset. You can see this because all the cards flip back. And you can hear a sound effect, which means that the cards are shuffled. 
-
 ### Instructions
 - The 'instructions' button has a hover effect: the mouse turns into a pointer and the color of the button changes.
 - When a user clicks on the 'instructions' button, a modal appears. The modal fits the screen size. 
