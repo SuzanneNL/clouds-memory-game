@@ -29,6 +29,13 @@ To return to the README file, click [here]( https://github.com/SuzanneNL/clouds-
 I wanted to test my code with Jasmine, but unfortunately the course material and the tutorials I found on youtube were not extensive enough to apply to my code. I would have needed more time to dive into Jasmine testing, which I unfortunately did not have. I therefore manually tested all the functions, and I used console.log very much, for example to check if event listeners worked, or what the number of flipped cards was. I would still like to learn Jasmine one day.
 
 ## Testing user stories
+As the creator of this website...
+- **I want my website and game to be simple but attractive so that a user is enticed to play the game.**
+
+- **I want my website to have a clear and simple structure, so that it is easy to navigate.**
+- **I want my website to entertain the user with a fun memory game, that he will want to play several times - for example to try again to improve the number of clicks needed.**
+- **I want my website to 'reward' a user with sound effects and a modal at the end of the game.**
+
 As a user....
 - **I enjoy looking at pretty pictures of clouds.**
 I chose eight pictures of beautiful clouds. Even though the size of the images goes down as the user uses a smaller device, they are still portrayed correctly and visible. But for the best experience, I advice using a tablet or larger device, instead of a mobile phone.  
@@ -116,7 +123,7 @@ document.querySelector('.cloud-image').classList.add('hide-card');
 document.querySelector('#option2').addEventListener("click", 	showNameCards);
 ```
 This worked for the first cloud card. I then tried to change querySelector into querySelectorAll, but unfortunately '.add' cannot be combined with querySelectorAll. According to tutor support, it seems like querySelectorAll adds everything together it grabs into a nodeList. I therefore had to write out the querySelector for each card. 
--I had been playing and testing the game with 16 images cards, but had now uploaded 8 name cards. This broke my checkIfGameIsCompleted function. This was because of the condition checking the number of flipped cards (16 at the end) with the number of all the cards:
+- I had been playing and testing the game with 16 images cards, but had now uploaded 8 name cards. This broke my checkIfGameIsCompleted function. This was because of the condition checking the number of flipped cards (16 at the end) with the number of all the cards:
 ```javascript	
 (allMemoryCards.length == flippedCards.length)
 ```
@@ -135,8 +142,8 @@ successSound.play()};
 ```css
 body {
     min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 footer {
     margin-top: auto;
@@ -147,7 +154,7 @@ This made the footer stick to the bottom but also made white space appear next t
 - I had changed the classes of the images memory cards for consistency, but I had actually changed the class of one of the name-cards. This resulted in breaking the game: when I reset the game, the cards that had been flipped were flipped back, but could then no longer be clicked. Also when resetting the game, not all cards were flipped back. This was fixed by changing back the name of the class of the name-card.
 
 ## Unresolved issues
-- Ideally, when the page opens, the entire game and all of its buttons are visual on the screen, without having to scroll down. This has been the case on most mobile devices and monitors that I have tested. The page actually fits best on tablets. Unfortunately on the laptops that have been tried out, the 'play again!' button doesn't fit: a user needs to scroll down a bit to see it. A different lay-out (with all the buttons on the side) could be considered or wide screens.  
+- Ideally, when the page opens, the entire game and all of its buttons are visual on the screen, without having to scroll down. This has been the case on most mobile devices and monitors that I have tested. The page actually fits best on tablets. Unfortunately, on some of the laptops that have tested the game, the 'play again!' button doesn't fit: a user needs to scroll down a bit to see it. A different lay-out (with all the buttons on the side) could be considered for wide screens.  
 - When clicking two cards quickly, the second flip sound doesn't play. This is because the first sound (0.43 sec) hasn't finished playing yet.   
 
 ## Browsers
@@ -156,5 +163,5 @@ It was tricky for me to test in Safari, because I don't have Apple devices. It w
 The game does not work in Internet Explorer. 
 
 ## Responsiveness
-Testing to see if the website adjusts itself to the size of the device was mostly done using the Chrome DevTool. With media queries, the size of the header, game, click counter and buttons was adjusted. 
-At the final stage, the website was tested on my personal devices (Lenovo Ideapad 110, HP Pavilion P6330NL with Lenco Monitor (1920px x 1080px), Huawei P30, Samsung Galaxy S4 mini), and my family's and friends' devices. The website was displayed as intended. 
+- Whilst building this website, testing to see if the website adjusts itself to the size of the device was mostly done with the Chrome DevTool. Media queries makse the size of the header, game, click counter and buttons adjust to the device. 
+- At the final stage, the website was tested on my personal devices (Lenovo Ideapad 110, HP Pavilion P6330NL with Lenco Monitor (1920px x 1080px), Huawei P30, Samsung Galaxy S4 mini), and my family's and friends' devices. The website was displayed as intended. 
