@@ -29,14 +29,17 @@ To return to the README file, click [here]( https://github.com/SuzanneNL/clouds-
 I wanted to test my code with Jasmine, but unfortunately the course material and the tutorials I found on youtube were not extensive enough to apply to my code. I would have needed more time to dive into Jasmine testing, which I unfortunately did not have. I therefore manually tested all the functions, and I used console.log very much, for example to check if event listeners worked, or what the number of flipped cards was. I would still like to learn Jasmine one day.
 
 ## Testing user stories
-As the creator of this website...
+**As the creator of this website...**
 - **I want my website and game to be simple but attractive so that a user is enticed to play the game.**
-
+The design of this website has been kept simple, with three main colors that compliment each other. The cloud images are beautiful.  
 - **I want my website to have a clear and simple structure, so that it is easy to navigate.**
+There website consists of a single page. This page has a header and footer, and a game that has three buttons and a click counter. Hover effects make it easy for the user to navigate.
 - **I want my website to entertain the user with a fun memory game, that he will want to play several times - for example to try again to improve the number of clicks needed.**
+Visual effects and sound effects make the game entertaining. During the game, the click counter keeps track of the number of clicks a user needs to complete the game. At the end, the user is told how many clicks he needed. He can then try to beat his score.
 - **I want my website to 'reward' a user with sound effects and a modal at the end of the game.**
+The flip sound, match sound, win sound and shuffle sound reward the user for his actions. A modal pops up after completing the game, informing the user of the number of clicks he needed.
 
-As a user....
+**As a user....**
 - **I enjoy looking at pretty pictures of clouds.**
 I chose eight pictures of beautiful clouds. Even though the size of the images goes down as the user uses a smaller device, they are still portrayed correctly and visible. But for the best experience, I advice using a tablet or larger device, instead of a mobile phone.  
 - **I want to entertain myself by playing a game.**
