@@ -183,13 +183,21 @@ The text for all the sections of the website were written by me.
 ### Media
 All the images used in this game were obtained from the Instagram account [@whatsthiscloud](https://www.instagram.com/whatsthiscloud/)
 - Cirrocumulus - original photo by user @cloud_bashing_pilot
+![Cirrocumulus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/01.png)
 - Cumulonimbus - original photo by user @mizeyes
+![Cumulonimbus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/02.png)
 - Fallstreak hole - original photo by user @eagle.ed
+![Fallstreak hole](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/03.png)
 - Horseshoe vortex - original photo by @whatsthiscloud
+![Horseshoe vortex](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/04.png)
 - Lacunosus - original photo by user @itspoultrynmotion
+![Lacunosus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/05.png)
 - Lenticularis - original photo by user @pilot_lindy
+![Lenticularis](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/06.png)
 - Mammatus - original photo by user @fotometeokevins
+![Mammatus](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/07.png)
 - Noctilucent - original photo by user @fluffles2016
+![Noctilucent](https://github.com/SuzanneNL/clouds-memory-game/blob/master/images/08.png)
 
 Sounds:
 - [Flip sound](https://freesound.org/people/qubodup/sounds/60013/)
