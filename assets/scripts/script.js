@@ -152,9 +152,9 @@ function showNameCards() {
 	document.querySelector('.second-cloud-image7').classList.add('hide-card');
 	document.querySelector('.cloud-name7').classList.add('show-card');
 	document.querySelector('.second-cloud-image8').classList.add('hide-card');
-    document.querySelector('.cloud-name8').classList.add('show-card');
-    document.querySelector('.option1').classList.add('hide-check');
-    document.querySelector('.option2').classList.remove('hide-check');
+	document.querySelector('.cloud-name8').classList.add('show-card');
+	document.querySelector('.option1').classList.add('hide-check');
+	document.querySelector('.option2').classList.remove('hide-check');
 }
 
 /*This is the event listener that checks if option2 is selected, and then runs the resetAndShowNameCards function*/
@@ -186,9 +186,9 @@ function showImageCards() {
 	document.querySelector('.second-cloud-image7').classList.remove('hide-card');
 	document.querySelector('.cloud-name7').classList.remove('show-card');
 	document.querySelector('.second-cloud-image8').classList.remove('hide-card');
-    document.querySelector('.cloud-name8').classList.remove('show-card');
-    document.querySelector('.option1').classList.remove('hide-check');
-    document.querySelector('.option2').classList.add('hide-check');
+	document.querySelector('.cloud-name8').classList.remove('show-card');
+	document.querySelector('.option1').classList.remove('hide-check');
+	document.querySelector('.option2').classList.add('hide-check');
 }
 
 /*This is the event listener that checks if option1 is selected, and then runs the resetAndShowImageCards function*/
@@ -197,7 +197,7 @@ document.querySelector('#option1').addEventListener("click", resetAndShowImageCa
 /*This function plays a shuffle sound. It resets the game by first removing all flip classes. It then resets the counters to 0. 
 It adds the event listeners that were removed due to matches. It resets the board, and shuffles the cards after a short time-out*/
 function resetGame() {
-    shuffleSound.play();
+	shuffleSound.play();
 	document.querySelector('.first-cloud-image1').classList.remove('flip');
 	document.querySelector('.first-cloud-image2').classList.remove('flip');
 	document.querySelector('.first-cloud-image3').classList.remove('flip');
@@ -222,8 +222,8 @@ function resetGame() {
 	document.querySelector('.cloud-name6').classList.remove('flip');
 	document.querySelector('.cloud-name7').classList.remove('flip');
 	document.querySelector('.cloud-name8').classList.remove('flip');
-    document.querySelector('.counter span').innerHTML = 0;
-    document.querySelector('#final-count').innerHTML = 0;
+	document.querySelector('.counter span').innerHTML = 0;
+	document.querySelector('#final-count').innerHTML = 0;
 	allMemoryCards.forEach(card => card.addEventListener('click', cardFlip));
 	resetBoard();
 	setTimeout(() => {

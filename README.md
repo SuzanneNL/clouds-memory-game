@@ -85,9 +85,9 @@ I used the following font-families:
 
 ### Mock-ups
 Mock-ups for this website were created using Figma.
--Desktop version:
+- Desktop version:
 ![Figma - desktop version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-desktop.png)
--Mobile devices version:
+- Mobile devices version:
 ![Figma - mobile version](https://github.com/SuzanneNL/clouds-memory-game/blob/master/documentation/figma-mobile.png)
 
 
