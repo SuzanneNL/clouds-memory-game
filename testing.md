@@ -93,8 +93,13 @@ turns into a pointer and the color of an item and the text changes.
 - When a user clicks on one of these icons, he is directed to the corresponding website in a new tab.
 
 ## Resolved issues
+1. **Clicking a third card.**
 - A user could click on a third card before a match was checked between the first and second card. The solution to this was to lock the board and use the setTimeout function to allow cards to be flipped back. This was explained in the youtube tutorial I used (see Credits in the README file).
+
+2. **Double-clicking a card.**
 - A user could click on a card twice, which gave a match (in the data attribute). The card would remain flipped, because the event listener was removed. This was fixed by adding a condition that checks if, when clicked, 'this' was the first card. This was explained in the youtube tutorial.
+
+3. **Click counter going up by two.**
 - To count the number of clicks, I wrote the following code:
 ```javascript
 let countNum = document.querySelector('.countNum span');
@@ -108,6 +113,8 @@ This however made the clicks count by two. So one click gave the number of two, 
 cards.forEach(card => card.addEventListener('click', flipCard, countUp));
 ```
 That fixed it.
+
+4. **Switching between options.**
 - There are two options for playing the game. I wanted option one to show all cloud images. And I wanted to show cloud images and name images as option two. First I tried to create an event listener for clicking on option two in the dropdown menu that I created:
 ```javascript
 function test () {
@@ -125,6 +132,8 @@ document.querySelector('.cloud-image').classList.add('hide-card');
 document.querySelector('#option2').addEventListener("click", 	showNameCards);
 ```
 This worked for the first cloud card. I then tried to change querySelector into querySelectorAll, but unfortunately '.add' cannot be combined with querySelectorAll. According to tutor support, it seems like querySelectorAll adds everything together it grabs into a nodeList. I therefore had to write out the querySelector for each card. 
+
+5. **Unable to complete the game.** 
 - I had been playing and testing the game with 16 images cards, but had now uploaded 8 name cards. This broke my checkIfGameIsCompleted function. This was because of the condition checking the number of flipped cards (16 at the end) with the number of all the cards:
 ```javascript	
 (allMemoryCards.length == flippedCards.length)
@@ -133,13 +142,19 @@ And because I had added the name cards, I now had 24 cards. I fixed this by just
 ```javascript	
 (flippedCards.length == 16)
 ```
-- The success and win sounds played at the same time at the end of the game. I wanted only the win sound to play, so I omitted the success sound for the 8th match by adding a condition:
+6. **The success and win sounds played at the same time at the end of the game.** 
+- I wanted only the win sound to play, so I omitted the success sound for the 8th match by adding a condition:
 ```javascript
 if (flippedCards.length < 16) {
 successSound.play()};
 ```
+7. **Shuffling before flipping back.** 
 - When I reset the game or switched levels, the cards would shuffle before they were flipped back, so that a user could see where the cards were going. This was fixed with the setTimeout function, allowing the cards to flip back before they were shuffled.
+
+8. **Resetting the click counter for the win modal.**
 - The click counter was reset when the game was reset. But I had forgotten to reset the click counter in the win modal. This made the number of clicks go up and up after each game. This was easily fixed by resetting the click counter in the win modal like I had in the click counter itself.
+
+9. **Footer going over the game.**
 - The footer would go over the game, so I made it stick to the bottom of the page with the following CSS (that I had also used in my MS1):
 ```css
 body {
@@ -152,7 +167,11 @@ footer {
 }
 ```    
 This made the footer stick to the bottom but also made white space appear next to and under the page on stretched devices with a width of 320px and under. I already had media queries in place, but adjusting them and making the width of the game and header smaller for these devices fixed this bug.
+
+10. **The game didn't work in Safari.**
 - In Safari, the cards didn't flip, but glitched. This broke the game completely. I fixed this by prefixing the CSS using [Autoprefixer CSS online](https://autoprefixer.github.io/). 
+
+11. **Changing class names.**
 - I had changed the classes of the images memory cards for consistency, but I had actually changed the class of one of the name-cards. This resulted in breaking the game: when I reset the game, the cards that had been flipped were flipped back, but could then no longer be clicked. Also when resetting the game, not all cards were flipped back. This was fixed by changing back the name of the class of the name-card.
 
 ## Unresolved issues
