@@ -207,6 +207,8 @@ Sounds:
 - Tutorials:
     - https://www.youtube.com/watch?v=ZniVgo8U7ek
     - https://www.youtube.com/watch?v=KX0NR5HtQ1Q
+- Counter:
+    - https://stackoverflow.com/questions/61901400/multiple-javascript-counters-on-page
 - Testing file:
     - https://github.com/AJGreaves/picflip/blob/master/testing.md
 

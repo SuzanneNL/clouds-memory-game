@@ -11,7 +11,7 @@ let firstCard, secondCard;
 let hasFlippedCard = false;
 let lockBoard = false;
 let flippedCards;
-let countNum = document.querySelector('.counter span');
+let countClicks = document.querySelector('.counter span');
 let finalCount = document.querySelector('#final-count');
 
 /*This function shuffles the cards, making them switch positions. This function is called first."*/
@@ -53,7 +53,7 @@ function cardFlip() {
 /*This function counts the number of clicks. Because of its position in cardFlip, doubleclicking a card doesn't count. Only flips count. 
 The number is shown in the click counter and in the win-modal*/
 function countUp() {
-	countNum.innerHTML++;
+	countClicks.innerHTML++;
 	finalCount.innerHTML++;
 }
 
@@ -135,26 +135,28 @@ function resetAndShowNameCards() {
 	}, 600);
 }
 
-/*This function replaces the second cloud images with the name cards, and adds a check mark to the second option*/
+/*This function replaces the second cloud images with the name cards, and adds a check mark to the second option.
+Comment 2020-10-05: It would perhaps have been smarter and more efficient to change the innerhtml of my memory cards, instead of working with adding and removing classes 
+for switching between options 1 and 2, but I realized this the night after submitting my project*/
 function showNameCards() {
-	document.querySelector('.second-cloud-image1').classList.add('hide-card');
-	document.querySelector('.cloud-name1').classList.add('show-card');
-	document.querySelector('.second-cloud-image2').classList.add('hide-card');
-	document.querySelector('.cloud-name2').classList.add('show-card');
-	document.querySelector('.second-cloud-image3').classList.add('hide-card');
-	document.querySelector('.cloud-name3').classList.add('show-card');
-	document.querySelector('.second-cloud-image4').classList.add('hide-card');
-	document.querySelector('.cloud-name4').classList.add('show-card');
-	document.querySelector('.second-cloud-image5').classList.add('hide-card');
-	document.querySelector('.cloud-name5').classList.add('show-card');
-	document.querySelector('.second-cloud-image6').classList.add('hide-card');
-	document.querySelector('.cloud-name6').classList.add('show-card');
-	document.querySelector('.second-cloud-image7').classList.add('hide-card');
-	document.querySelector('.cloud-name7').classList.add('show-card');
-	document.querySelector('.second-cloud-image8').classList.add('hide-card');
-	document.querySelector('.cloud-name8').classList.add('show-card');
-	document.querySelector('.option1').classList.add('hide-check');
-	document.querySelector('.option2').classList.remove('hide-check');
+	document.querySelector('#second-cloud-image1').classList.add('hide-card');
+	document.querySelector('#cloud-name1').classList.add('show-card');
+	document.querySelector('#second-cloud-image2').classList.add('hide-card');
+	document.querySelector('#cloud-name2').classList.add('show-card');
+	document.querySelector('#second-cloud-image3').classList.add('hide-card');
+	document.querySelector('#cloud-name3').classList.add('show-card');
+	document.querySelector('#second-cloud-image4').classList.add('hide-card');
+	document.querySelector('#cloud-name4').classList.add('show-card');
+	document.querySelector('#second-cloud-image5').classList.add('hide-card');
+	document.querySelector('#cloud-name5').classList.add('show-card');
+	document.querySelector('#second-cloud-image6').classList.add('hide-card');
+	document.querySelector('#cloud-name6').classList.add('show-card');
+	document.querySelector('#second-cloud-image7').classList.add('hide-card');
+	document.querySelector('#cloud-name7').classList.add('show-card');
+	document.querySelector('#second-cloud-image8').classList.add('hide-card');
+    document.querySelector('#cloud-name8').classList.add('show-card');
+    document.querySelector('.option1').classList.add('hide-check');
+    document.querySelector('.option2').classList.remove('hide-check');
 }
 
 /*This is the event listener that checks if option2 is selected, and then runs the resetAndShowNameCards function*/
@@ -171,24 +173,24 @@ function resetAndShowImageCards() {
 
 /*This function replaces the name cards with the second image cards, and adds a check mark to the first option*/
 function showImageCards() {
-	document.querySelector('.second-cloud-image1').classList.remove('hide-card');
-	document.querySelector('.cloud-name1').classList.remove('show-card');
-	document.querySelector('.second-cloud-image2').classList.remove('hide-card');
-	document.querySelector('.cloud-name2').classList.remove('show-card');
-	document.querySelector('.second-cloud-image3').classList.remove('hide-card');
-	document.querySelector('.cloud-name3').classList.remove('show-card');
-	document.querySelector('.second-cloud-image4').classList.remove('hide-card');
-	document.querySelector('.cloud-name4').classList.remove('show-card');
-	document.querySelector('.second-cloud-image5').classList.remove('hide-card');
-	document.querySelector('.cloud-name5').classList.remove('show-card');
-	document.querySelector('.second-cloud-image6').classList.remove('hide-card');
-	document.querySelector('.cloud-name6').classList.remove('show-card');
-	document.querySelector('.second-cloud-image7').classList.remove('hide-card');
-	document.querySelector('.cloud-name7').classList.remove('show-card');
-	document.querySelector('.second-cloud-image8').classList.remove('hide-card');
-	document.querySelector('.cloud-name8').classList.remove('show-card');
-	document.querySelector('.option1').classList.remove('hide-check');
-	document.querySelector('.option2').classList.add('hide-check');
+	document.querySelector('#second-cloud-image1').classList.remove('hide-card');
+	document.querySelector('#cloud-name1').classList.remove('show-card');
+	document.querySelector('#second-cloud-image2').classList.remove('hide-card');
+	document.querySelector('#cloud-name2').classList.remove('show-card');
+	document.querySelector('#second-cloud-image3').classList.remove('hide-card');
+	document.querySelector('#cloud-name3').classList.remove('show-card');
+	document.querySelector('#second-cloud-image4').classList.remove('hide-card');
+	document.querySelector('#cloud-name4').classList.remove('show-card');
+	document.querySelector('#second-cloud-image5').classList.remove('hide-card');
+	document.querySelector('#cloud-name5').classList.remove('show-card');
+	document.querySelector('#second-cloud-image6').classList.remove('hide-card');
+	document.querySelector('#cloud-name6').classList.remove('show-card');
+	document.querySelector('#second-cloud-image7').classList.remove('hide-card');
+	document.querySelector('#cloud-name7').classList.remove('show-card');
+	document.querySelector('#second-cloud-image8').classList.remove('hide-card');
+    document.querySelector('#cloud-name8').classList.remove('show-card');
+    document.querySelector('.option1').classList.remove('hide-check');
+    document.querySelector('.option2').classList.add('hide-check');
 }
 
 /*This is the event listener that checks if option1 is selected, and then runs the resetAndShowImageCards function*/
@@ -198,30 +200,30 @@ document.querySelector('#option1').addEventListener("click", resetAndShowImageCa
 It adds the event listeners that were removed due to matches. It resets the board, and shuffles the cards after a short time-out*/
 function resetGame() {
 	shuffleSound.play();
-	document.querySelector('.first-cloud-image1').classList.remove('flip');
-	document.querySelector('.first-cloud-image2').classList.remove('flip');
-	document.querySelector('.first-cloud-image3').classList.remove('flip');
-	document.querySelector('.first-cloud-image4').classList.remove('flip');
-	document.querySelector('.first-cloud-image5').classList.remove('flip');
-	document.querySelector('.first-cloud-image6').classList.remove('flip');
-	document.querySelector('.first-cloud-image7').classList.remove('flip');
-	document.querySelector('.first-cloud-image8').classList.remove('flip');
-	document.querySelector('.second-cloud-image1').classList.remove('flip');
-	document.querySelector('.second-cloud-image2').classList.remove('flip');
-	document.querySelector('.second-cloud-image3').classList.remove('flip');
-	document.querySelector('.second-cloud-image4').classList.remove('flip');
-	document.querySelector('.second-cloud-image5').classList.remove('flip');
-	document.querySelector('.second-cloud-image6').classList.remove('flip');
-	document.querySelector('.second-cloud-image7').classList.remove('flip');
-	document.querySelector('.second-cloud-image8').classList.remove('flip');
-	document.querySelector('.cloud-name1').classList.remove('flip');
-	document.querySelector('.cloud-name2').classList.remove('flip');
-	document.querySelector('.cloud-name3').classList.remove('flip');
-	document.querySelector('.cloud-name4').classList.remove('flip');
-	document.querySelector('.cloud-name5').classList.remove('flip');
-	document.querySelector('.cloud-name6').classList.remove('flip');
-	document.querySelector('.cloud-name7').classList.remove('flip');
-	document.querySelector('.cloud-name8').classList.remove('flip');
+	document.querySelector('#first-cloud-image1').classList.remove('flip');
+	document.querySelector('#first-cloud-image2').classList.remove('flip');
+	document.querySelector('#first-cloud-image3').classList.remove('flip');
+	document.querySelector('#first-cloud-image4').classList.remove('flip');
+	document.querySelector('#first-cloud-image5').classList.remove('flip');
+	document.querySelector('#first-cloud-image6').classList.remove('flip');
+	document.querySelector('#first-cloud-image7').classList.remove('flip');
+	document.querySelector('#first-cloud-image8').classList.remove('flip');
+	document.querySelector('#second-cloud-image1').classList.remove('flip');
+	document.querySelector('#second-cloud-image2').classList.remove('flip');
+	document.querySelector('#second-cloud-image3').classList.remove('flip');
+	document.querySelector('#second-cloud-image4').classList.remove('flip');
+	document.querySelector('#second-cloud-image5').classList.remove('flip');
+	document.querySelector('#second-cloud-image6').classList.remove('flip');
+	document.querySelector('#second-cloud-image7').classList.remove('flip');
+	document.querySelector('#second-cloud-image8').classList.remove('flip');
+	document.querySelector('#cloud-name1').classList.remove('flip');
+	document.querySelector('#cloud-name2').classList.remove('flip');
+	document.querySelector('#cloud-name3').classList.remove('flip');
+	document.querySelector('#cloud-name4').classList.remove('flip');
+	document.querySelector('#cloud-name5').classList.remove('flip');
+	document.querySelector('#cloud-name6').classList.remove('flip');
+	document.querySelector('#cloud-name7').classList.remove('flip');
+	document.querySelector('#cloud-name8').classList.remove('flip');
 	document.querySelector('.counter span').innerHTML = 0;
 	document.querySelector('#final-count').innerHTML = 0;
 	allMemoryCards.forEach(card => card.addEventListener('click', cardFlip));
